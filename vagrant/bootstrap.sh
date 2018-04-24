@@ -26,3 +26,5 @@ fi
 echo "alias build-all='/vagrant/vagrant/build-all.sh'" >> /home/vagrant/.bashrc
 
 cd /vagrant/bootstrap_build && npm install
+
+cd /vagrant/data-standard && git submodule update --init
