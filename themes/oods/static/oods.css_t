@@ -1,0 +1,55 @@
+.beta {
+    background: black;
+    color: white;
+}
+
+
+.navbar .navbar-nav .active a {
+    border-bottom: 2px solid #fdd106;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.admonition.note {
+    border-left: 5px solid #56c0e0;
+    background: #edf8fb;
+    padding: 10px;
+}
+
+
+.admonition.attention, .admonition.warning {
+    border-left: 5px solid #f0ad4e;
+    background: #fcf7e4;
+    padding: 10px;
+}
+
+.btn-outline {
+    border: 1px solid #ddd;
+}
+
+h1 {
+    color: #00788a;
+    font-weight: bold;
+}
+
+.oods-breadcrumbs-parent {
+    color: #00788a;
+}
+
+table.docutils {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+table.docutils thead tr {
+    background: #eceeef;
+}
+
+
+.sidebartoctree li.toctree-l1 > a {
+    display: none;
+}
+
+

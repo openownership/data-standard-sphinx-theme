@@ -1,0 +1,9 @@
+/bootstrap_build/node_modules
+/bootstrap_build/bootstrap
+/bootstrap_build/.sass-cache
+/.vagrant
+/.idea
+/themes/oods/static/bootstrap-4.0.0/js/*.js
+/themes/oods/static/bootstrap-4.0.0/js/*.map
+/themes/oods/static/bootstrap-4.0.0/css/*.css
+/data-standard

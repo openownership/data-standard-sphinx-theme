@@ -1,0 +1,35 @@
+{% set currently_in = None %}
+{% if sourcename == 'data.md.txt' %}
+    {% set currently_in = 'data.html' %}
+{% elif sourcename == 'primer.md.txt' %}
+    {% set currently_in = 'primer.html' %}
+{% elif parents|length > 0 %}
+    {% set currently_in = parents[0].link %}
+{% endif %}
+
+
+<nav class="navbar navbar-expand-lg navbar-{{ theme_navbar_color_class }} bg-{{ theme_navbar_bg_class }} py-0">
+    <a class="navbar-brand" href="{{ pathto(master_doc) }}">
+        {{ project }}
+    </a>
+    <ul class="navbar-nav">
+        <li class="nav-item{% if currently_in == 'primer.html' %} active{% endif %}">
+            <a class="nav-link py-4" href="primer.html">Primer</a>
+        </li>
+        <li class="nav-item{% if currently_in == 'data.html' %} active{% endif %}">
+            <a class="nav-link py-4" href="data.html">Data Schemer</a>
+        </li>
+        <li class="nav-item{% if currently_in == 'userguides.html' %} active{% endif %}">
+            <a class="nav-link py-4" href="userguides.html">User Guides</a>
+        </li>
+        <li class="nav-item{% if currently_in == 'examples.html' %} active{% endif %}">
+            <a class="nav-link py-4" href="examples.html">Example Data</a>
+        </li>
+        <li class="nav-item{% if currently_in == 'toolbox.html' %} active{% endif %}">
+            <a class="nav-link py-4" href="toolbox.html">Tool Box</a>
+        </li>
+        <li class="nav-item{% if currently_in == 'about.html' %} active{% endif %}">
+            <a class="nav-link py-4" href="about.html">About</a>
+        </li>
+    </ul>
+</nav>
