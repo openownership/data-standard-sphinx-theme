@@ -38,3 +38,8 @@ pygments_monkeypatch_style("oods", OODSStyle)
 pygments_style = "oods"
 
 
+###################################################### Extensions
+# Remove sphinxcontrib.opendataservices - don't think it's actually used.
+
+extensions = ['sphinxcontrib.jsonschema']
+
