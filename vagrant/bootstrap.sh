@@ -28,6 +28,7 @@ if [ ! -d /vagrant/bootstrap_build/bootstrap ]; then
 fi
 
 echo "alias build-all='/vagrant/vagrant/build-all.sh'" >> /home/vagrant/.bashrc
+echo "alias build-sphinx='/vagrant/vagrant/build-sphinx.sh'" >> /home/vagrant/.bashrc
 
 cd /vagrant/bootstrap_build && npm install
 
