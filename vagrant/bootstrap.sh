@@ -7,7 +7,7 @@ apt-get install -y python3 python3-pip apache2 build-essential ruby-dev
 
 pip3 install virtualenv recommonmark sphinx==1.5.6
 
-pip3 install -e git+https://github.com/OpenDataServices/sphinxcontrib-jsonschema.git@e39a92f4238bf022db11e4e88ba92fdaff2b31c9#egg=sphinxcontrib-jsonschema
+pip3 install -e git+https://github.com/OpenDataServices/sphinxcontrib-jsonschema.git@8d0d2bb00742b25707866b0f7a2b6c0c35948c5e#egg=sphinxcontrib-jsonschema
 
 
 
