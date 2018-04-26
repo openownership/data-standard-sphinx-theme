@@ -12,6 +12,11 @@
     font-weight: bold;
 }
 
+.oods-main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
 .admonition.note {
     border-left: 5px solid #56c0e0;
     background: #edf8fb;
@@ -45,6 +50,17 @@ table.docutils {
 
 table.docutils thead tr {
     background: #eceeef;
+}
+
+.oods-sidebar {
+  position: fixed;
+  bottom: 0;
+  top: 74px;
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
 }
 
 .sidebartoctree ul {
@@ -99,3 +115,9 @@ table.docutils thead tr {
 .sidebartoctree li.toctree-l3.current > a {
     color: #777777;
 }
+
+
+
+
+
+
