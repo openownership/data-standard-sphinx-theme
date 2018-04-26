@@ -53,6 +53,7 @@ table.docutils thead tr {
 }
 
 .oods-sidebar {
+  background: #f7f7f7;
   position: fixed;
   bottom: 0;
   top: 74px;
