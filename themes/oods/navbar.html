@@ -3,6 +3,14 @@
     {% set currently_in = 'data.html' %}
 {% elif sourcename == 'primer.md.txt' %}
     {% set currently_in = 'primer.html' %}
+{% elif sourcename == 'userguides.md.txt' %}
+    {% set currently_in = 'userguides.html' %}
+{% elif sourcename == 'examples.md.txt' %}
+    {% set currently_in = 'examples.html' %}
+{% elif sourcename == 'toolbox.md.txt' %}
+    {% set currently_in = 'toolbox.html' %}
+{% elif sourcename == 'about.md.txt' %}
+    {% set currently_in = 'about.html' %}
 {% elif parents|length > 0 %}
     {% set currently_in = parents[0].link %}
 {% endif %}
