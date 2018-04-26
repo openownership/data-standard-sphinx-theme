@@ -12,24 +12,32 @@
     <a class="navbar-brand" href="{{ pathto(master_doc) }}">
         {{ project }}
     </a>
-    <ul class="navbar-nav">
-        <li class="nav-item{% if currently_in == 'primer.html' %} active{% endif %}">
-            <a class="nav-link py-4" href="primer.html">Primer</a>
-        </li>
-        <li class="nav-item{% if currently_in == 'data.html' %} active{% endif %}">
-            <a class="nav-link py-4" href="data.html">Data Schema</a>
-        </li>
-        <li class="nav-item{% if currently_in == 'userguides.html' %} active{% endif %}">
-            <a class="nav-link py-4" href="userguides.html">User Guides</a>
-        </li>
-        <li class="nav-item{% if currently_in == 'examples.html' %} active{% endif %}">
-            <a class="nav-link py-4" href="examples.html">Example Data</a>
-        </li>
-        <li class="nav-item{% if currently_in == 'toolbox.html' %} active{% endif %}">
-            <a class="nav-link py-4" href="toolbox.html">Tool Box</a>
-        </li>
-        <li class="nav-item{% if currently_in == 'about.html' %} active{% endif %}">
-            <a class="nav-link py-4" href="about.html">About</a>
-        </li>
-    </ul>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+            <li class="nav-item{% if currently_in == 'primer.html' %} active{% endif %}">
+                <a class="nav-link py-4" href="primer.html">Primer</a>
+            </li>
+            <li class="nav-item{% if currently_in == 'data.html' %} active{% endif %}">
+                <a class="nav-link py-4" href="data.html">Data Schema</a>
+            </li>
+            <li class="nav-item{% if currently_in == 'userguides.html' %} active{% endif %}">
+                <a class="nav-link py-4" href="userguides.html">User Guides</a>
+            </li>
+            <li class="nav-item{% if currently_in == 'examples.html' %} active{% endif %}">
+                <a class="nav-link py-4" href="examples.html">Example Data</a>
+            </li>
+            <li class="nav-item{% if currently_in == 'toolbox.html' %} active{% endif %}">
+                <a class="nav-link py-4" href="toolbox.html">Tool Box</a>
+            </li>
+            <li class="nav-item{% if currently_in == 'about.html' %} active{% endif %}">
+                <a class="nav-link py-4" href="about.html">About</a>
+            </li>
+        </ul>
+    </div>
+
 </nav>
