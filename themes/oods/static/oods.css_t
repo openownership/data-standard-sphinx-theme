@@ -116,7 +116,13 @@ table.docutils thead tr {
     color: #777777;
 }
 
-
+#searchbox input[type="text"] {
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: solid 1px #e4e4e4;
+  width: 100%;
+  padding: 4px;
+}
 
 
 
