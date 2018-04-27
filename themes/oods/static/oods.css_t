@@ -13,7 +13,7 @@
 }
 
 .oods-main {
-    max-width: 38rem;
+    max-width: 42rem;
     margin: 0 auto;
 }
 
@@ -33,6 +33,7 @@
     border-left: 5px solid #f0ad4e;
     background: #fcf7e4;
     padding: 10px;
+    margin: 20px 0;
 }
 
 .btn-outline {
