@@ -1,11 +1,25 @@
-          {% block menu %}
-            {% set toctree = toctree(maxdepth=3, collapse=True, includehidden=False, titles_only=False) %}
-            {% if toctree %}
-              <div class="sidebartoctree">
-                {{ toctree }}
-              </div>
-            {% else %}
-                <!-- Local TOC -->
-                <div class="local-toc">{{ toc }}</div>
-            {% endif %}
-          {% endblock %}
+{% if currently_in == 'primer.html' %}
+    <div class="sidebartoctree-title"><a href="primer.html">Primer</a></div>
+{% elif currently_in == 'data.html' %}
+    <div class="sidebartoctree-title"><a href="data.html">Data Schema</a></div>
+{% elif currently_in == 'userguides.html' %}
+    <div class="sidebartoctree-title"><a href="userguides.html">User Guides</a></div>
+{% elif currently_in == 'examples.html' %}
+    <div class="sidebartoctree-title"><a href="examples.html">Example Data</a></div>
+{% elif currently_in == 'toolbox.html' %}
+    <div class="sidebartoctree-title"><a href="toolbox.html">Tool Box</a></div>
+{% elif currently_in == 'about.html' %}
+    <div class="sidebartoctree-title"><a href="about.html">About</a></div>
+{% endif %}
+
+{% block menu %}
+    {% set toctree = toctree(maxdepth=3, collapse=True, includehidden=False, titles_only=False) %}
+    {% if toctree %}
+        <div class="sidebartoctree">
+            {{ toctree }}
+        </div>
+    {% else %}
+        <!-- Local TOC -->
+        <div class="local-toc">{{ toc }}</div>
+    {% endif %}
+{% endblock %}
