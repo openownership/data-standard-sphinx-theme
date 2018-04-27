@@ -1,8 +1,11 @@
 $( document ).ready(function() {
-    $('#oodsSideBar').width($('#oodsSideBarWrapper').width()+'px');
+    fixLayout();
     $( window ).resize(function() {
-        $('#oodsSideBar').width($('#oodsSideBarWrapper').width()+'px');
+        fixLayout();
     });
 });
 
-
+function fixLayout() {
+    $('.oods-sidebar').css({'top':parseInt($('nav.navbar').height())+'px'});
+    $('#oodsSideBar').width($('#oodsSideBarWrapper').width()+'px');
+}
