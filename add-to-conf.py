@@ -11,36 +11,12 @@ html_theme_path = [os.path.join(os.path.dirname(os.path.realpath(__file__)), '..
 
 
 ###################################################### Pygments Style
-# https://stackoverflow.com/questions/48615629/how-to-include-pygments-styles-in-a-sphinx-project
 #
 # There is an existing pygments_style bit - search for it and replace it with this.
 #
 
-from pygments.style import Style
-from pygments.token import Keyword, Name, Comment, String, Error, \
-     Number, Operator, Generic, Whitespace
-
-class OODSStyle(Style):
-    background_color = "#fbfbfb"
-    default_style = ""
-    styles = {
-        String: "#d9534f"
-    }
-
-
-def pygments_monkeypatch_style(mod_name, cls):
-    import sys
-    import pygments.styles
-    cls_name = cls.__name__
-    mod = type(__import__("os"))(mod_name)
-    setattr(mod, cls_name, cls)
-    setattr(pygments.styles, mod_name, mod)
-    sys.modules["pygments.styles." + mod_name] = mod
-    from pygments.styles import STYLE_MAP
-    STYLE_MAP[mod_name] = mod_name + "::" + cls_name
-
-
-pygments_monkeypatch_style("oods", OODSStyle)
+import oods.pygments
+oods.pygments.pygments_monkeypatch_style("oods", oods.pygments.OODSStyle)
 pygments_style = "oods"
 
 
