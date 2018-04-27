@@ -24,7 +24,7 @@
 }
 
 
-.admonition.attention, .admonition.warning {
+.admonition.attention, .admonition.warning, .highlights {
     border-left: 5px solid #f0ad4e;
     background: #fcf7e4;
     padding: 10px;
