@@ -1,5 +1,8 @@
 
 ###################################################### Use Custom Theme
+#
+#  There is an existing html_theme bit - search for it and replace it with this.
+#
 
 import os
 html_theme = 'oods'
@@ -9,6 +12,9 @@ html_theme_path = [os.path.join(os.path.dirname(os.path.realpath(__file__)), '..
 
 ###################################################### Pygments Style
 # https://stackoverflow.com/questions/48615629/how-to-include-pygments-styles-in-a-sphinx-project
+#
+# There is an existing pygments_style bit - search for it and replace it with this.
+#
 
 from pygments.style import Style
 from pygments.token import Keyword, Name, Comment, String, Error, \
@@ -40,6 +46,9 @@ pygments_style = "oods"
 
 ###################################################### Extensions
 # Remove sphinxcontrib.opendataservices - don't think it's actually used.
+#
+# There is an existing extensions bit - search for it and replace it with this.
+#
 
 extensions = ['sphinxcontrib.jsonschema']
 
