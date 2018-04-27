@@ -45,6 +45,10 @@ h1 {
     font-weight: bold;
 }
 
+h2, h3 {
+    margin: 2.5rem 0 1rem;
+}
+
 .oods-breadcrumbs-parent {
     color: #00788a;
 }
