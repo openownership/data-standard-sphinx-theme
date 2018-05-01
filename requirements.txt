@@ -1,0 +1,4 @@
+virtualenv
+recommonmark
+sphinx==1.5.6
+-e git+https://github.com/OpenDataServices/sphinxcontrib-jsonschema.git@8d0d2bb00742b25707866b0f7a2b6c0c35948c5e#egg=sphinxcontrib-jsonschema
