@@ -13,7 +13,7 @@
 {% endif %}
 
 {% block menu %}
-    {% set toctree = toctree(maxdepth=3, collapse=True, includehidden=False, titles_only=False) %}
+    {% set toctree = toctree(maxdepth=3, collapse=True, includehidden=True, titles_only=False) %}
     {% if toctree %}
         <div class="sidebartoctree">
             {{ toctree }}
