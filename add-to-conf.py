@@ -5,8 +5,8 @@
 #
 
 import os
-html_theme = 'oods'
-html_theme_path = [os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', '..', 'themes')]
+html_theme = 'sphinxtheme'
+html_theme_path = [os.path.join(os.path.dirname(os.path.realpath(__file__)), '..', '..', 'oods')]
 
 
 

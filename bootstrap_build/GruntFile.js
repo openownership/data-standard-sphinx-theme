@@ -21,7 +21,7 @@ module.exports = function(grunt) {
                     expand: true, // Recursive Output style.
                     cwd: "bootstrap/scss/", // The startup directory
                     src: ["**/*.scss"], // Source files
-                    dest: "../themes/oods/static/bootstrap-4.0.0/css/", // Destination
+                    dest: "../oods/sphinxtheme/static/bootstrap-4.0.0/css/", // Destination
                     ext: ".css" // File extension
                 }]
             }

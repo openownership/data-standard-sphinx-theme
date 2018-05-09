@@ -3,7 +3,7 @@
 /bootstrap_build/.sass-cache
 /.vagrant
 /.idea
-/themes/oods/static/bootstrap-4.0.0/js/*.js
-/themes/oods/static/bootstrap-4.0.0/js/*.map
-/themes/oods/static/bootstrap-4.0.0/css/*.css
+/oods/sphinxtheme/static/bootstrap-4.0.0/js/*.js
+/oods/sphinxtheme/static/bootstrap-4.0.0/js/*.map
+/oods/sphinxtheme/static/bootstrap-4.0.0/css/*.css
 /data-standard

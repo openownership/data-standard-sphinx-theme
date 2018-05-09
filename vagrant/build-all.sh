@@ -6,7 +6,7 @@ cp /vagrant/bootstrap_build/src/_variables.scss  /vagrant/bootstrap_build/bootst
 
 cd /vagrant/bootstrap_build && grunt sass
 
-cp /vagrant/bootstrap_build/bootstrap/dist/js/bootstrap.* /vagrant/themes/oods/static/bootstrap-4.0.0/js/
+cp /vagrant/bootstrap_build/bootstrap/dist/js/bootstrap.* /vagrant/oods/sphinxtheme/static/bootstrap-4.0.0/js/
 
 export PYTHONPATH=$PYTHONPATH:/vagrant/
 
