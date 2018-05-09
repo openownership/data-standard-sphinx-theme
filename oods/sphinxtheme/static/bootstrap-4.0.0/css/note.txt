@@ -1,2 +1,7 @@
-This folder is empty in Git - the contents are built automatically.
-(This file also acts as a git-keep to make sure the folder is checked in.)
+The Bootstrap files are built automatically by /vagrant/build-all.
+
+Do NOT make changes to the Bootstrap files here - if you need to make changes make sure it works via the build process.
+
+However they are checked into git so that this repository/theme can be used via pip install with no extra builds steps.
+(As the place the build is happening may not be able to support extra build steps).
+
