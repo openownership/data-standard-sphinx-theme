@@ -1,6 +1,6 @@
 from pygments.style import Style
-from pygments.token import Keyword, Name, Comment, String, Error, \
-     Number, Operator, Generic, Whitespace
+from pygments.token import String
+
 
 # https://stackoverflow.com/questions/48615629/how-to-include-pygments-styles-in-a-sphinx-project
 
