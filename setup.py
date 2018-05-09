@@ -4,7 +4,7 @@ setup(
     name='standard_theme',
     url='https://github.com/openownership/data-standard-sphinx-theme',
     description='Sphinx Theme for Open Ownership',
-    packages=['oods'],
+    packages=['oods','oods.sphinxtheme'],
     package_data={'oods': [
         'sphinxtheme/theme.conf',
         'sphinxtheme/*.html',
