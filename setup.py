@@ -11,7 +11,7 @@ setup(
         'sphinxtheme/static/*.css_t',
         'sphinxtheme/static/*.js',
         'sphinxtheme/static/bootstrap-4.0.0/css/*.css',
-        'sphinxtheme/static/bootstrap-4.0.0/js/*.js'
+        'sphinxtheme/static/bootstrap-4.0.0/js/*.js',
         'sphinxtheme/static/bootstrap-4.0.0/js/*.js.map'
     ]},
     include_package_data=True,
