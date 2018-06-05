@@ -143,6 +143,8 @@ table.docutils thead tr {
   padding: 4px;
 }
 
-
+.oods-main a {
+    text-decoration: underline;
+}
 
 
