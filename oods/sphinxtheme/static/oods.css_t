@@ -132,6 +132,7 @@ table.docutils thead tr {
 
 .sidebartoctree li.toctree-l3.current > a {
     color: #777777;
+    font-weight: bold;
 }
 
 #searchbox input[type="text"] {
