@@ -63,7 +63,6 @@ table.docutils thead tr {
 }
 
 .oods-sidebar {
-  background: #f7f7f7;
   position: fixed;
   bottom: 0;
   top: 74px;
@@ -135,8 +134,11 @@ table.docutils thead tr {
     font-weight: bold;
 }
 
+.searchboxwrapper {
+  background: #f7f7f7;
+}
+
 #searchbox input[type="text"] {
-  border-radius: 10px;
   background-color: #ffffff;
   border: solid 1px #e4e4e4;
   width: 100%;

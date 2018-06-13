@@ -50,13 +50,15 @@
 
 {%- macro sphinxsidebar() %}
       {%- if render_sidebar %}
-        <div class="beta mb-3 px-3 py-1">
+        <div class="beta px-3 py-1">
             BETA
         </div>
-        <div class="px-3">
+        <div class="searchboxwrapper mb-3 px-3 py-4">
             {%- block sidebarsearch %}
                 {%- include "searchbox.html" %}
             {%- endblock %}
+        </div>
+        <div class="px-3">
             {%- block sidebartoc %}
                 {%- include "globaltoc.html" %}
             {%- endblock %}
