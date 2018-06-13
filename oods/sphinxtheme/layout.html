@@ -81,9 +81,11 @@
             <div class="oods-main">
                 {% include "breadcrumbsedit.html" %}
 
-                {%- block document %}
-                    {% block body %} {% endblock %}
-                {%- endblock %}
+                <div class="oods-main-document">
+                    {%- block document %}
+                        {% block body %} {% endblock %}
+                    {%- endblock %}
+                </div>
 
                 {% include "prevnext.html" %}
             </div>

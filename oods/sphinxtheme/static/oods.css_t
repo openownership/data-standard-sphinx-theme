@@ -148,8 +148,43 @@ table.docutils thead tr {
   padding: 4px;
 }
 
-.oods-main a {
-    text-decoration: underline;
+.oods-breadcrumbs-parent a, .oods-main-document a {
+  display: inline-block;
+  position: relative;
+  color: #00788A;
+  text-decoration: none;
+  padding: 0.2em 0.05em;
+  border-bottom: 3px solid #ABDADE;
+  font-weight: 500;
+}
+
+.oods-breadcrumbs-parent a:hover, .oods-breadcrumbs-parent a:focus, .oods-main-document a:hover, .oods-main-document a:focus {
+  color: #00788A;
+}
+
+.oods-breadcrumbs-parent a:after, .oods-main-document a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #ABDADE;
+  z-index: -1;
+  transition: all 0.1s cubic-bezier(0.000, 0.590, 1.000, 0.260);
+}
+
+.oods-breadcrumbs-parent a:hover:after, .oods-breadcrumbs-parent a:focus:after, .oods-main-document a:hover:after, .oods-main-document a:focus:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #ABDADE;
+  z-index: -1;
 }
 
 .oods-main span.pre {
