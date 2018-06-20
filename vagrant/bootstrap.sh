@@ -7,7 +7,7 @@ apt-get install -y python3 python3-pip apache2 build-essential ruby-dev
 
 cd /vagrant && pip3 install -r requirements.txt
 
-mkdir /out
+mkdir -p /out
 chown -R vagrant:users /out
 
 cp /vagrant/vagrant/apache.conf /etc/apache2/sites-enabled/000-default.conf
