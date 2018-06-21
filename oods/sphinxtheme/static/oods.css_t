@@ -191,3 +191,28 @@ table.docutils thead tr {
     border: 1px solid #e4e4e4;
     border-radius: 2px;
 }
+
+.frontpageboxleft, .frontpageboxright {
+    border: 1px solid black;
+    margin: 10px 0;
+}
+
+@media only screen and (min-width: 992px) {
+    .frontpageboxleft, .frontpageboxright {
+        width: 49%;
+    }
+
+    .frontpageboxleft {
+        float: left;
+    }
+
+    .frontpageboxright {
+        float: right;
+    }
+
+    .frontpageboxclear {
+        clear: both;
+    }
+
+}
+
