@@ -1,15 +1,15 @@
-{% if currently_in == 'primer.html' %}
-    <div class="sidebartoctree-title"><a href="primer.html">Primer</a></div>
-{% elif currently_in == 'data.html' %}
-    <div class="sidebartoctree-title"><a href="data.html">Data Schema</a></div>
-{% elif currently_in == 'userguides.html' %}
-    <div class="sidebartoctree-title"><a href="userguides.html">User Guides</a></div>
-{% elif currently_in == 'examples.html' %}
-    <div class="sidebartoctree-title"><a href="examples.html">Example Data</a></div>
-{% elif currently_in == 'toolbox.html' %}
-    <div class="sidebartoctree-title"><a href="toolbox.html">Tool Box</a></div>
-{% elif currently_in == 'about.html' %}
-    <div class="sidebartoctree-title"><a href="about.html">About</a></div>
+{% if currently_in == 'primer' %}
+    <div class="sidebartoctree-title"><a href="{{ pathto('/primer/index') }}">Primer</a></div>
+{% elif currently_in == 'schema' %}
+    <div class="sidebartoctree-title"><a href="{{ pathto('/schema/index') }}">Data Schema</a></div>
+{% elif currently_in == 'userguides' %}
+    <div class="sidebartoctree-title"><a href="{{ pathto('/userguides/index') }}">User Guides</a></div>
+{% elif currently_in == 'examples' %}
+    <div class="sidebartoctree-title"><a href="{{ pathto('/examples/index') }}">Example Data</a></div>
+{% elif currently_in == 'toolbox' %}
+    <div class="sidebartoctree-title"><a href="{{ pathto('/toolbox/index') }}">Tool Box</a></div>
+{% elif currently_in == 'about' %}
+    <div class="sidebartoctree-title"><a href="{{ pathto('/about/index') }}">About</a></div>
 {% endif %}
 
 {% block menu %}
