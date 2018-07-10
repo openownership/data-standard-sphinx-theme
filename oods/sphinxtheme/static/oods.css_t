@@ -16,7 +16,7 @@
 }
 
 .oods-main {
-    max-width: 42rem;
+    max-width: 62rem;
     margin: 0 auto;
 }
 
