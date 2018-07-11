@@ -25,6 +25,13 @@
     display: block;
 }
 
+/* Make sure that when people follow anchor links the content isn't obscured by the top nav.
+https://github.com/openownership/data-standard-sphinx-theme/issues/22 **/
+.oods-main div.section {
+    margin-top: -60px;
+    padding-top: 60px;
+}
+
 .admonition.note {
     border-left: 5px solid #56c0e0;
     background: #edf8fb;
