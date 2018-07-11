@@ -20,6 +20,11 @@
     margin: 0 auto;
 }
 
+
+.oods-main .figure {
+    display: block;
+}
+
 .oods-main img {
     margin: 0 auto;
     display: block;
