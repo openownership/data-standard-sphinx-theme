@@ -200,9 +200,10 @@ table.docutils thead tr {
 }
 
 .frontpageboxleft, .frontpageboxright {
-    border: 1px solid black;
-    margin: 10px 0;
+    border: 1px solid #ddd;
+    margin: 20px 0;
     padding: 0px;
+    border-radius: 5px;
 }
 
 .frontpageboxleft h2, .frontpageboxright h2 {
@@ -235,14 +236,19 @@ table.docutils thead tr {
 }
 
 .frontpageboxleft  .secondaryfrontpageboxlink , .frontpageboxright .secondaryfrontpageboxlink {
-    border-top: 1px solid black;
+    border-top: 1px solid #ddd;
     padding: 5px 10px;
 
 }
 
+.frontpageboxleft  .secondaryfrontpageboxlink a , .frontpageboxright .secondaryfrontpageboxlink a {
+    text-decoration: none;
+    border-bottom: 0px;
+}
+
 @media only screen and (min-width: 992px) {
     .frontpageboxleft, .frontpageboxright {
-        width: 49%;
+        width: 45%;
     }
 
     .frontpageboxleft {
