@@ -176,8 +176,8 @@ table.docutils thead tr {
   position: relative;
   color: #00788A;
   text-decoration: none;
-  padding: 0.2em 0.05em;
-  border-bottom: 3px solid #ABDADE;
+  padding: 0 0.05em;
+  border-bottom: 3px solid #D0EFEF;
   font-weight: 500;
 }
 
@@ -193,7 +193,7 @@ table.docutils thead tr {
   right: 0;
   bottom: 0;
   left: 0;
-  background: #ABDADE;
+  background: #D0EFEF;
   z-index: -1;
   transition: all 0.1s cubic-bezier(0.000, 0.590, 1.000, 0.260);
 }
@@ -206,7 +206,7 @@ table.docutils thead tr {
   right: 0;
   bottom: 0;
   left: 0;
-  background: #ABDADE;
+  background: #D0EFEF;
   z-index: -1;
 }
 
