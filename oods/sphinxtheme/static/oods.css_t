@@ -97,11 +97,16 @@ table.docutils thead tr {
   padding: 0;
   overflow-x: hidden;
   overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  background: #f7f7f7;
+}
+
+.sidebartoctreewrapper {
+  padding-right: 5px;
 }
 
 .sidebartoctree-title {
     margin-top: 20px;
-    padding: 5px;
+    padding: 5px 5px 5px 20px;
     font-weight: bold;
     font-size: 1.25rem;
 }
@@ -131,9 +136,9 @@ table.docutils thead tr {
 
 
 .sidebartoctree li.toctree-l2 {
-    border-top: 1px solid #b7b7b7;
-    margin: 0;
-    padding: 5px;
+    margin: 5px 0;
+    padding: 10px 10px 10px 20px;
+    background: white;
 }
 
 .sidebartoctree li.toctree-l2 > a {
@@ -147,7 +152,7 @@ table.docutils thead tr {
 
 .sidebartoctree li.toctree-l3 {
     margin: 0;
-    padding: 5px 5px 5px 30px;
+    padding: 10px 10px 10px 30px;
 }
 
 
@@ -160,9 +165,6 @@ table.docutils thead tr {
     font-weight: bold;
 }
 
-.searchboxwrapper {
-  background: #f7f7f7;
-}
 
 #searchbox input[type="text"] {
   background-color: #ffffff;
