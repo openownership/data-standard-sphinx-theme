@@ -8,7 +8,7 @@
 }
 
 .navbar .navbar-nav .active a {
-    border-bottom: 2px solid #fdd106;
+    border-bottom: 4px solid #fdd106;
 }
 
 .navbar-brand {
