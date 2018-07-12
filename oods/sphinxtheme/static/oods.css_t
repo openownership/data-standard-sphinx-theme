@@ -37,6 +37,17 @@ https://github.com/openownership/data-standard-sphinx-theme/issues/22 **/
     padding-top: 60px;
 }
 
+
+.oods-main .toctree-wrapper ul {
+    list-style-type: none;
+    border-left: 6px solid #eee;
+    margin: 50px 0 50px 20%;
+}
+
+.oods-main .toctree-wrapper ul li {
+    margin-bottom: 20px;
+}
+
 .admonition.note {
     border-left: 5px solid #56c0e0;
     background: #edf8fb;
