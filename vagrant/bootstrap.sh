@@ -10,6 +10,9 @@ cd /vagrant && pip3 install -r requirements.txt
 mkdir -p /out
 chown -R vagrant:users /out
 
+pip3 install lxml html5lib gevent cchardet
+pip3 install pylinkvalidator
+
 cp /vagrant/vagrant/apache.conf /etc/apache2/sites-enabled/000-default.conf
 /etc/init.d/apache2 restart
 

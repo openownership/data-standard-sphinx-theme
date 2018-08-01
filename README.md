@@ -24,3 +24,12 @@ This only runs the sphinx stage, and does not build the theme files.
 If you have only changed content, use "build-sphinx". 
 If you or someone else has changed the theme, or you are unsure about which to use, use "build-all". 
 
+## To look for broken links
+
+When you are connected to the vagrant box (after running "vagrant ssh"), run:
+
+    build-all
+    pylinkvalidate.py --output=/tmp/report.txt  http://localhost/
+    less /tmp/report.txt
+
+
