@@ -32,4 +32,6 @@ When you are connected to the vagrant box (after running "vagrant ssh"), run:
     pylinkvalidate.py --output=/tmp/report.txt  http://localhost/
     less /tmp/report.txt
 
+This will only check internal links. If you want to check external links to, add " --test-outside"
 
+    pylinkvalidate.py --test-outside --output=/tmp/report.txt  http://localhost/
