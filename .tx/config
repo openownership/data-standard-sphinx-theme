@@ -2,9 +2,9 @@
 host = https://www.transifex.com
 
 [bods-theme.sphinx-pot]
-file_filter = locale/<lang>/LC_MESSAGES
+file_filter = oods/locale/<lang>/LC_MESSAGES/sphinx.po
 minimum_perc = 0
-source_file = locale/sphinx.pot
+source_file = oods/locale/sphinx.pot
 source_lang = en
 type = PO
 

@@ -44,6 +44,7 @@ You need to get a [Transifex API key](https://www.transifex.com/user/settings/ap
 
 After you add translatable strings to the theme templates:
 
-1. Extract the strings (to `locale/sphinx.pot`): `python setup.py extract_messages`
+1. Extract the strings (to `oods/locale/sphinx.pot`): `python setup.py extract_messages`
 2. Push to Transifex: `tx push -s`
 3. Fetch new translations from Transifex: `tx pull -a`
+4. To build a particular language locally you can run `sphinx-build -b html -D language={lang} . _build/html/{lang}` (from the `data-standard/docs` directory)
