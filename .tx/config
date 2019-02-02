@@ -1,0 +1,10 @@
+[main]
+host = https://www.transifex.com
+
+[bods-theme.sphinx-pot]
+file_filter = locale/<lang>/LC_MESSAGES
+minimum_perc = 0
+source_file = locale/sphinx.pot
+source_lang = en
+type = PO
+
