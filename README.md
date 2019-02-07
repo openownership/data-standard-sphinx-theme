@@ -35,3 +35,16 @@ When you are connected to the vagrant box (after running "vagrant ssh"), run:
 This will only check internal links. If you want to check external links to, add " --test-outside"
 
     pylinkvalidate.py --test-outside --output=/tmp/report.txt  http://localhost/
+
+## Translations
+
+If you add English text to a theme (including in `title` attributes or similar), make sure to wrap it in `{% trans %}` / `{% endtrans %}` blocks.
+
+You need to get a [Transifex API key](https://www.transifex.com/user/settings/api/), make sure you have access to the [BODS Theme project on Transifex](https://www.transifex.com/OpenDataServices/bods-theme).
+
+After you add translatable strings to the theme templates:
+
+1. Extract the strings (to `oods/locale/sphinx.pot`): `python setup.py extract_messages`
+2. Push to Transifex: `tx push -s`
+3. Fetch new translations from Transifex: `tx pull -a`
+4. To build a particular language locally you can run `sphinx-build -b html -D language={lang} . _build/html/{lang}` (from the `data-standard/docs` directory)

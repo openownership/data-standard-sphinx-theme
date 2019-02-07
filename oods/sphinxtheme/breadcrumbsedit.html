@@ -3,7 +3,7 @@
     <div>
         {% if parents|length == 0 %}
             <span class="oods-breadcrumbs-parent"><a href="{{ link }}">{{ title }}</a> / </span>
-            <span class="oods-breadcrumbs-page">Intro</span>
+            <span class="oods-breadcrumbs-page">{% trans %}Intro{% endtrans %}</span>
         {% else %}
             {% for doc in parents %}
                 <span class="oods-breadcrumbs-parent"><a href="{{ doc.link|e }}">{{ doc.title }}</a> / </span>

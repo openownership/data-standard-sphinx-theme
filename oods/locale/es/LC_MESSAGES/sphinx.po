@@ -1,0 +1,64 @@
+# Translations template for standard_theme.
+# Copyright (C) 2019 ORGANIZATION
+# This file is distributed under the same license as the standard_theme
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+# 
+# Translators:
+# Amy Guy <amy.guy@opendataservices.coop>, 2019
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: standard_theme 0.0.0\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2019-02-02 16:51+0000\n"
+"PO-Revision-Date: 2019-02-02 16:10+0000\n"
+"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2019\n"
+"Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: oods/sphinxtheme/breadcrumbsedit.html:6
+msgid "Intro"
+msgstr ""
+
+#: oods/sphinxtheme/globaltoc.html:2 oods/sphinxtheme/navbar.html:15
+msgid "Primer"
+msgstr "Primer but in Spanish"
+
+#: oods/sphinxtheme/globaltoc.html:4 oods/sphinxtheme/navbar.html:18
+msgid "Data Schema"
+msgstr ""
+
+#: oods/sphinxtheme/globaltoc.html:6
+msgid "User Guides"
+msgstr ""
+
+#: oods/sphinxtheme/globaltoc.html:8 oods/sphinxtheme/navbar.html:26
+msgid "Example Data"
+msgstr ""
+
+#: oods/sphinxtheme/globaltoc.html:10
+msgid "Tool Box"
+msgstr ""
+
+#: oods/sphinxtheme/globaltoc.html:12 oods/sphinxtheme/navbar.html:34
+msgid "About"
+msgstr ""
+
+#: oods/sphinxtheme/prevnext.html:6
+msgid "Previous"
+msgstr ""
+
+#: oods/sphinxtheme/prevnext.html:14
+msgid "Next"
+msgstr ""
+
+#: oods/sphinxtheme/searchbox.html:4
+msgid "Search..."
+msgstr ""

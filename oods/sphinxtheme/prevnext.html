@@ -3,7 +3,7 @@
     <div class="float-left">
         {%- if prev %}
             <a href="{{ prev.link|e }}" title="Previous" class="btn btn-outline">
-                Previous
+                {% trans %}Previous{% endtrans %}
             </a>
         {%- endif %}
     </div>
@@ -11,7 +11,7 @@
     <div class="float-right">
         {%- if next %}
             <a href="{{ next.link|e }}" title="Next" class="btn btn-primary">
-                Next
+                {% trans %}Next{% endtrans %}
             </a>
         {%- endif %}
     </div>
