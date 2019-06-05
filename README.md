@@ -24,6 +24,16 @@ This only runs the sphinx stage, and does not build the theme files.
 If you have only changed content, use "build-sphinx". 
 If you or someone else has changed the theme, or you are unsure about which to use, use "build-all". 
 
+
+### Problems
+
+Q: Pip install fails saying "ERROR: Could not install packages due to an EnvironmentError: [Errno 39] Directory not empty"?
+A: Just run the command again. If the error persists, run 
+
+    rm -rf /vagrant/data-standard/.ve
+
+and try again.
+
 ## To look for broken links
 
 When you are connected to the vagrant box (after running "vagrant ssh"), run:
