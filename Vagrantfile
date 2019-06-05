@@ -1,10 +1,10 @@
 Vagrant.configure(2) do |config|
 
-  config.vm.box = "ubuntu/artful64"
+  config.vm.box = "ubuntu/bionic64"
 
   config.vm.define "worker" do |normal|
 
-      config.vm.box = "ubuntu/artful64"
+      config.vm.box = "ubuntu/bionic64"
 
       config.vm.network "forwarded_port", guest: 80, host: 8080
 

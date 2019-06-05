@@ -5,7 +5,7 @@ set -e
 apt-get update
 apt-get install -y python3 python3-pip apache2 build-essential ruby-dev
 
-cd /vagrant && pip3 install -r requirements.txt
+pip3 install virtualenv
 
 mkdir -p /out
 chown -R vagrant:users /out
