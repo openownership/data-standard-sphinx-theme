@@ -11,7 +11,7 @@ You will need Vagrant and VirtualBox (or equivalent).
 1. Check out this git repository into a folder anywhere.  eg data-standard-sphinx-theme
 2. Check out the https://github.com/openownership/data-standard git repository into a folder called "data-standard" inside the other folder. eg data-standard-sphinx-theme/data-standard 
 3. (you may want to check out a particular branch of the data-standard repository now.)
-4. Copy the bits from add-to-conf.py into the real conf.py ( TODO we need to do better with this step! )
+4. Follow the instructons in add-to-conf.py in the root directory to edit conf.py in data-standard/docs/conf.py .
 5. In the folder for this repository (eg data-standard-sphinx-theme) run "vagrant up"
 6. Run "vagrant ssh" to connect to this box (Windows user may want to install the putty plugin and run "vagrant putty" instead). 
 7. Inside the box, run "build-all"
@@ -23,6 +23,16 @@ Once you have run "build-all" once, you can switch to the faster "build-sphinx" 
 This only runs the sphinx stage, and does not build the theme files. 
 If you have only changed content, use "build-sphinx". 
 If you or someone else has changed the theme, or you are unsure about which to use, use "build-all". 
+
+
+### Problems
+
+Q: Pip install fails saying "ERROR: Could not install packages due to an EnvironmentError: [Errno 39] Directory not empty"?
+A: Just run the command again. If the error persists, run 
+
+    rm -rf /vagrant/data-standard/.ve
+
+and try again.
 
 ## To look for broken links
 
@@ -48,3 +58,4 @@ After you add translatable strings to the theme templates:
 2. Push to Transifex: `tx push -s`
 3. Fetch new translations from Transifex: `tx pull -a`
 4. To build a particular language locally you can run `sphinx-build -b html -D language={lang} . _build/html/{lang}` (from the `data-standard/docs` directory)
+
