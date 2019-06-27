@@ -3,7 +3,7 @@
 set -e
 
 apt-get update
-apt-get install -y python3 python3-pip apache2 build-essential ruby-dev
+DEBIAN_FRONTEND=noninteractive apt-get install -y python3 python3-pip apache2 build-essential ruby-dev
 
 pip3 install virtualenv
 
