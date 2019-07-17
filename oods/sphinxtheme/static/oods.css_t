@@ -283,3 +283,23 @@ table.docutils thead tr {
 
 }
 
+/** https://github.com/openownership/data-standard-sphinx-theme/issues/41 **/
+table.docutils thead tr {
+    background: #00788a;
+}
+
+table.docutils thead tr th {
+    color: white;
+}
+
+table.docutils tbody tr td .pre {
+    background: white;
+}
+
+table.docutils tbody tr.row-even {
+    background: #ddd;
+}
+
+table.docutils tbody tr.row-odd td {
+    padding-bottom: 20px;
+}
