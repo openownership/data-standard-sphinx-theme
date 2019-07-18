@@ -32,11 +32,11 @@
 
 /* Make sure that when people follow anchor links the content isn't obscured by the top nav.
 https://github.com/openownership/data-standard-sphinx-theme/issues/22 **/
-.oods-main div.section {
-    margin-top: -60px;
-    padding-top: 60px;
+.oods-main div.section span + h2 {
+    display: block;
+    margin-top: -3.5rem;
+    padding-top: 6rem;
 }
-
 
 .oods-main .toctree-wrapper ul {
     list-style-type: none;
