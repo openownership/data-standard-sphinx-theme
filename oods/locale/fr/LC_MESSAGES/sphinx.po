@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: standard_theme 0.0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-02-02 16:51+0000\n"
+"POT-Creation-Date: 2019-07-18 15:56+0000\n"
 "PO-Revision-Date: 2019-02-02 16:10+0000\n"
 "Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2019\n"
 "Language-Team: French (https://www.transifex.com/OpenDataServices/teams/95583/fr/)\n"
@@ -49,6 +49,10 @@ msgstr ""
 
 #: oods/sphinxtheme/globaltoc.html:12 oods/sphinxtheme/navbar.html:34
 msgid "About"
+msgstr ""
+
+#: oods/sphinxtheme/navbar.html:5
+msgid " Beneficial Ownership Data Standard "
 msgstr ""
 
 #: oods/sphinxtheme/prevnext.html:6
