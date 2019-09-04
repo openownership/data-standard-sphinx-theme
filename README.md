@@ -20,7 +20,7 @@ You will need Vagrant and VirtualBox (or equivalent).
 Edit any files you want, then repeat the last 2 steps!
 
 Once you have run "build-all" once, you can switch to the faster "build-sphinx" command. 
-This only runs the sphinx stage, and does not build the theme files. 
+This only runs the sphinx stage, and does not build the theme files or install the latest Python libraries. 
 If you have only changed content, use "build-sphinx". 
 If you or someone else has changed the theme, or you are unsure about which to use, use "build-all". 
 

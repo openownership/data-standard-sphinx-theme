@@ -16,7 +16,6 @@ then
 fi
 
 source .ve/bin/activate
-pip3 install -r requirements.txt
 sphinx-build  -a -D language=$BODSLANG /vagrant/data-standard/docs   /out/
 deactivate
 
