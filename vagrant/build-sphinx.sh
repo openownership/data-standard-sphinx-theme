@@ -2,6 +2,8 @@
 
 set -e
 
+BODSLANG=${BODSLANG:-en}
+
 ####################### Sphinx
 
 export PYTHONPATH=$PYTHONPATH:/vagrant/
@@ -15,7 +17,7 @@ fi
 
 source .ve/bin/activate
 pip3 install -r requirements.txt
-sphinx-build  -a /vagrant/data-standard/docs   /out/
+sphinx-build  -a -D language=$BODSLANG /vagrant/data-standard/docs   /out/
 deactivate
 
 ####################### Link Checker

@@ -25,6 +25,13 @@ If you have only changed content, use "build-sphinx".
 If you or someone else has changed the theme, or you are unsure about which to use, use "build-all". 
 
 
+## To build different languages
+
+Simply pass a variable:
+
+    BODSLANG=ru build-all
+    BODSLANG=ru build-sphinx
+
 ### Problems
 
 Q: Pip install fails saying "ERROR: Could not install packages due to an EnvironmentError: [Errno 39] Directory not empty"?
