@@ -80,6 +80,11 @@
                 {% include "breadcrumbsedit.html" %}
 
                 <div class="oods-main-document">
+                    <div class="alert alert-danger" role="alert">
+                        This is an old version of the data standard.
+                        <a href="https://standard.openownership.org/en/latest/"><button type="button" class="btn btn-danger">See latest version</button></a>
+                    </div>
+
                     {%- block document %}
                         {% block body %} {% endblock %}
                     {%- endblock %}
