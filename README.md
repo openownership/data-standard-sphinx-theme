@@ -10,12 +10,13 @@ You will need Vagrant and VirtualBox (or equivalent).
 
 1. Check out this git repository into a folder anywhere.  eg data-standard-sphinx-theme
 2. Check out the https://github.com/openownership/data-standard git repository into a folder called "data-standard" inside the other folder. eg data-standard-sphinx-theme/data-standard 
-3. (you may want to check out a particular branch of the data-standard repository now.)
-4. Follow the instructons in add-to-conf.py in the root directory to edit conf.py in data-standard/docs/conf.py .
-5. In the folder for this repository (eg data-standard-sphinx-theme) run "vagrant up"
-6. Run "vagrant ssh" to connect to this box (Windows user may want to install the putty plugin and run "vagrant putty" instead). 
-7. Inside the box, run "build-all"
-8. Browse "http://localhost:8080"
+3. Follow the instructions in the data-standard README.md. This is especially important if you are going to be translating a version of the data-standard's schema.
+4. (you may want to check out a particular branch of the data-standard repository now.)
+5. Follow the instructons in add-to-conf.py in the root directory to edit conf.py in data-standard/docs/conf.py .
+6. In the folder for this repository (eg data-standard-sphinx-theme) run "vagrant up"
+7. Run "vagrant ssh" to connect to this box (Windows user may want to install the putty plugin and run "vagrant putty" instead). 
+8. Inside the box, run "build-all"
+9. Browse "http://localhost:8080"
 
 Edit any files you want, then repeat the last 2 steps!
 
