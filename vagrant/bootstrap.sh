@@ -20,10 +20,6 @@ npm install -g grunt-cli
 
 gem install sass
 
-if [ ! -d /vagrant/bootstrap_build/bootstrap ]; then
-    git clone --branch v4.0.0  https://github.com/twbs/bootstrap.git  /vagrant/bootstrap_build/bootstrap
-fi
-
 echo "alias build-all='/vagrant/vagrant/build-all.sh'" >> /home/vagrant/.bashrc
 echo "alias build-sphinx='/vagrant/vagrant/build-sphinx.sh'" >> /home/vagrant/.bashrc
 

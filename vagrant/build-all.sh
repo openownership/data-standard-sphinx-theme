@@ -6,11 +6,11 @@ BODSLANG=${BODSLANG:-en}
 
 ####################### Bootstrap
 
-cp /vagrant/bootstrap_build/src/_variables.scss  /vagrant/bootstrap_build/bootstrap/scss/_variables.scss
+cp /vagrant/bootstrap_build/src/_variables.scss  /vagrant/bootstrap_build/node_modules/bootstrap/scss/_variables.scss
 
 cd /vagrant/bootstrap_build && grunt sass
 
-cp /vagrant/bootstrap_build/bootstrap/dist/js/bootstrap.* /vagrant/oods/sphinxtheme/static/bootstrap-4.0.0/js/
+cp /vagrant/bootstrap_build/node_modules/bootstrap/dist/js/bootstrap.* /vagrant/oods/sphinxtheme/static/bootstrap-4.0.0/js/
 
 ####################### Sphinx
 
