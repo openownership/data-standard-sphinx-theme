@@ -1,91 +1,154 @@
+@font-face {
+  font-family: "Publico Text Roman";
+  src: url("../fonts/publico-text-roman.woff2") format("woff2"),
+    url("../fonts/publico-text-roman.woff") format("woff"),
+    url("../fonts/publico-text-roman.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Publico Text Italic";
+  src: url("../fonts/publico-text-italic.woff2") format("woff2"),
+    url("../fonts/publico-text-italic.woff") format("woff"),
+    url("../fonts/publico-text-italic.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Publico Bold";
+  src: url("../fonts/publico-bold.woff2") format("woff2"),
+    url("../fonts/publico-bold.woff") format("woff"),
+    url("../fonts/publico-bold.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Atlas Grotesk Regular";
+  src: url("../fonts/atlas-grotesk-regular.woff2") format("woff2"),
+    url("../fonts/atlas-grotesk-regular.woff") format("woff"),
+    url("../fonts/atlas-grotesk-regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Atlas Grotesk Bold";
+  src: url("../fonts/atlas-grotesk-bold.woff2") format("woff2"),
+    url("../fonts/atlas-grotesk-bold.woff") format("woff"),
+    url("../fonts/atlas-grotesk-bold.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.sans-regular {
+  font-family: "Atlas Grotesk Regular", sans-serif;
+}
+
+.sans-bold {
+  font-family: "Atlas Grotesk Bold", sans-serif;
+}
+
+.serif-regular {
+  font-family: "Publico Text Roman", serif;
+}
+
+.serif-italic {
+  font-family: "Publico Text Italic", serif;
+}
+
+.serif-headline {
+  font-family: "Publico Bold", serif;
+}
+
 .beta {
-    background: black;
-    color: white;
+  background: #191d23;
+  color: white;
 }
 
 .navbar {
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  font-weight: bold;
 }
 
 .navbar .navbar-nav .active a {
-    border-bottom: 4px solid #fdd106;
-}
-
-.navbar-brand {
-    font-weight: bold;
+  border-bottom: 3px solid #3c31d4;
 }
 
 .oods-main {
-    max-width: 62rem;
-    margin: 0 auto;
+  max-width: 62rem;
+  margin: 0 auto;
 }
 
-
 .oods-main .figure {
-    display: block;
+  display: block;
 }
 
 .oods-main img {
-    margin: 0 auto;
-    display: block;
+  margin: 0 auto;
+  display: block;
 }
 
 /* Make sure that when people follow anchor links the content isn't obscured by the top nav.
 https://github.com/openownership/data-standard-sphinx-theme/issues/22 **/
 .oods-main div.section span + h2 {
-    display: block;
-    margin-top: -3.5rem;
-    padding-top: 6rem;
+  display: block;
+  margin-top: -3.5rem;
+  padding-top: 6rem;
 }
 
 .oods-main .toctree-wrapper ul {
-    list-style-type: none;
-    border-left: 6px solid #eee;
-    margin: 50px 0 50px 20%;
+  list-style-type: none;
+  border-left: 6px solid #eee;
+  margin: 50px 0 50px 20%;
 }
 
 .oods-main .toctree-wrapper ul li {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .admonition.note {
-    border-left: 5px solid #56c0e0;
-    background: #edf8fb;
-    padding: 10px;
+  border-left: 5px solid #56c0e0;
+  background: #edf8fb;
+  padding: 10px;
 }
 
-
-.admonition.attention, .admonition.warning, .highlights {
-    border-left: 5px solid #f0ad4e;
-    background: #fcf7e4;
-    padding: 10px;
-    margin: 20px 0;
+.admonition.attention,
+.admonition.warning,
+.highlights {
+  border-left: 5px solid #f0ad4e;
+  background: #fcf7e4;
+  padding: 10px;
+  margin: 20px 0;
 }
 
 .btn-outline {
-    border: 1px solid #ddd;
+  border: 1px solid #ddd;
 }
 
 h1 {
-    color: #00788a;
-    font-weight: bold;
+  color: #373a3c;
+  font-weight: bold;
 }
 
-h2, h3 {
-    margin: 2.5rem 0 1rem;
+h2,
+h3 {
+  margin: 2.5rem 0 1rem;
 }
 
 .oods-breadcrumbs-parent {
-    color: #00788a;
+  color: #00788a;
 }
 
 table.docutils {
-    margin-top: 10px;
-    margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 table.docutils thead tr {
-    background: #eceeef;
+  background: #eceeef;
 }
 
 .oods-sidebar {
@@ -105,66 +168,67 @@ table.docutils thead tr {
 }
 
 .sidebartoctree-title {
-    margin-top: 20px;
-    padding: 5px 5px 5px 20px;
-    font-weight: bold;
-    font-size: 1.25rem;
+  margin-top: 20px;
+  padding: 5px 5px 5px 20px;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.sidebartoctree-title a {
+  color: #373a3c;
 }
 
 .sidebartoctree ul {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .sidebartoctree > ul {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .sidebartoctree ul li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .sidebartoctree li.toctree-l1 {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .sidebartoctree li.toctree-l1 > a {
-    display: none;
+  display: none;
 }
 
-
 .sidebartoctree li.toctree-l2 {
-    margin: 5px 0;
-    padding: 10px 10px 10px 20px;
-    background: white;
+  margin: 5px 0;
+  padding: 10px 10px 10px 20px;
+  background: white;
 }
 
 .sidebartoctree li.toctree-l2 > a {
-    color: #777777;
+  color: #777777;
 }
 
 .sidebartoctree li.toctree-l2.current > a {
-    color: #00788a;
-    font-weight: bold;
+  color: #3c31d5;
+  font-weight: bold;
 }
 
 .sidebartoctree li.toctree-l3 {
-    margin: 0;
-    padding: 10px 10px 10px 30px;
+  margin: 0;
+  padding: 10px 10px 10px 30px;
 }
 
-
 .sidebartoctree li.toctree-l3 > a {
-    color: #777777;
+  color: #777777;
 }
 
 .sidebartoctree li.toctree-l3.current > a {
-    color: #777777;
-    font-weight: bold;
+  color: #777777;
+  font-weight: bold;
 }
-
 
 #searchbox input[type="text"] {
   background-color: #ffffff;
@@ -173,114 +237,126 @@ table.docutils thead tr {
   padding: 4px;
 }
 
-.oods-breadcrumbs-parent a, .oods-main-document a {
+.oods-breadcrumbs-parent a,
+.oods-main-document a {
   display: inline-block;
   position: relative;
   color: #3c31d5;
-  text-decoration: none;
+  text-decoration: underline;
   padding: 0 0.05em;
-  border-bottom: 1px solid #3c31d5;
-  transition: border-bottom .35s cubic-bezier(.39,.575,.565,1);
   font-weight: 500;
 }
 
-.oods-breadcrumbs-parent a:hover, .oods-breadcrumbs-parent a:focus, .oods-main-document a:hover, .oods-main-document a:focus {
+.oods-breadcrumbs-parent a:hover,
+.oods-breadcrumbs-parent a:focus,
+.oods-main-document a:hover,
+.oods-main-document a:focus {
   color: #3026bb;
-  border-bottom: 1px solid transparent;
+  text-decoration: none;
 }
 
 .oods-main span.pre {
-    border: 1px solid #e4e4e4;
-    border-radius: 2px;
+  border: 1px solid #e4e4e4;
+  border-radius: 2px;
 }
 
-.frontpageboxleft, .frontpageboxright {
-    border: 1px solid #ddd;
-    margin: 20px 0;
-    padding: 0px;
-    border-radius: 5px;
+.frontpageboxleft,
+.frontpageboxright {
+  border: 1px solid #ddd;
+  margin: 20px 0;
+  padding: 0px;
+  border-radius: 5px;
 }
 
-.frontpageboxleft h2, .frontpageboxright h2 {
-    padding: 5px 10px;
-    margin: 10px 0 0 0;
+.frontpageboxleft h2,
+.frontpageboxright h2 {
+  padding: 5px 10px;
+  margin: 10px 0 0 0;
 }
 
-.frontpageboxleft p, .frontpageboxright p {
-    padding: 5px 10px;
+.frontpageboxleft p,
+.frontpageboxright p {
+  padding: 5px 10px;
 }
 
-.frontpageboxleft  .primaryfrontpageboxlink , .frontpageboxright .primaryfrontpageboxlink {
-    padding: 5px 10px;
-    text-align: right;
+.frontpageboxleft .primaryfrontpageboxlink,
+.frontpageboxright .primaryfrontpageboxlink {
+  padding: 5px 10px;
+  text-align: right;
 }
 
-.frontpageboxleft  .primaryfrontpageboxlink a , .frontpageboxright .primaryfrontpageboxlink a {
-    color: #fff;
-    border-radius: 0.25rem;
-    line-height: 1.7;
-    padding: 0.375rem 0.75rem;
-    background-color: #3c31d5;
-    border-color: #3c31d5;
+.frontpageboxleft .primaryfrontpageboxlink a,
+.frontpageboxright .primaryfrontpageboxlink a {
+  color: #fff;
+  border-radius: 0.25rem;
+  line-height: 1.7;
+  padding: 0.375rem 0.75rem;
+  background-color: #3c31d5;
+  border-color: #3c31d5;
+  text-decoration: none;
 }
 
-.frontpageboxleft  .primaryfrontpageboxlink a:hover , .frontpageboxleft .primaryfrontpageboxlink a:focus,
-.frontpageboxright  .primaryfrontpageboxlink a:hover , .frontpageboxright .primaryfrontpageboxlink a:focus {
-    background-color: #3026bb;
-    border-color: #3026bb;
+.frontpageboxleft .primaryfrontpageboxlink a:hover,
+.frontpageboxleft .primaryfrontpageboxlink a:focus,
+.frontpageboxright .primaryfrontpageboxlink a:hover,
+.frontpageboxright .primaryfrontpageboxlink a:focus {
+  background-color: #3026bb;
+  border-color: #3026bb;
 }
 
-.frontpageboxleft  .secondaryfrontpageboxlink , .frontpageboxright .secondaryfrontpageboxlink {
-    border-top: 1px solid #ddd;
-    padding: 5px 10px;
-
+.frontpageboxleft .secondaryfrontpageboxlink,
+.frontpageboxright .secondaryfrontpageboxlink {
+  border-top: 1px solid #ddd;
+  padding: 5px 10px;
 }
 
-.frontpageboxleft  .secondaryfrontpageboxlink a , .frontpageboxright .secondaryfrontpageboxlink a {
-    text-decoration: underline;
+.frontpageboxleft .secondaryfrontpageboxlink a,
+.frontpageboxright .secondaryfrontpageboxlink a {
+  text-decoration: underline;
 }
 
 /* This deviates from the border-bottom approach as these are multiline strings (no transition possible) */
-.frontpageboxleft  .secondaryfrontpageboxlink a:hover , .frontpageboxright .secondaryfrontpageboxlink a:hover {
-    text-decoration: none;
+.frontpageboxleft .secondaryfrontpageboxlink a:hover,
+.frontpageboxright .secondaryfrontpageboxlink a:hover {
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 992px) {
-    .frontpageboxleft, .frontpageboxright {
-        width: 45%;
-    }
+  .frontpageboxleft,
+  .frontpageboxright {
+    width: 45%;
+  }
 
-    .frontpageboxleft {
-        float: left;
-    }
+  .frontpageboxleft {
+    float: left;
+  }
 
-    .frontpageboxright {
-        float: right;
-    }
+  .frontpageboxright {
+    float: right;
+  }
 
-    .frontpageboxclear {
-        clear: both;
-    }
-
+  .frontpageboxclear {
+    clear: both;
+  }
 }
 
 /** https://github.com/openownership/data-standard-sphinx-theme/issues/41 **/
 table.docutils thead tr {
-    background: #00788a;
+  background: #3c31d5;
 }
 
 table.docutils thead tr th {
-    color: white;
+  color: white;
 }
 
 table.docutils tbody tr td .pre {
-    background: white;
+  background: white;
 }
 
 table.docutils tbody tr.row-even {
-    background: #ddd;
+  background: #ddd;
 }
 
 table.docutils tbody tr.row-odd td {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }

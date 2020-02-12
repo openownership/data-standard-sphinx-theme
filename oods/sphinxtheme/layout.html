@@ -4,6 +4,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+    <!-- Preload -->
+    <link rel="preload" as="font" href="/_static/fonts/atlas-grotesk-bold.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/_static/fonts/atlas-grotesk-regular.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/_static/fonts/publico-bold.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/_static/fonts/publico-text-italic.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/_static/fonts/publico-text-roman.woff2" type="font/woff2" crossorigin="anonymous">
+
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/_static/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/_static/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/_static/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/_static/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/_static/favicons/safari-pinned-tab.svg" color="#3c31d5">
+    <link rel="shortcut icon" href="/_static/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#3c31d5">
+    <meta name="msapplication-config" content="/_static/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
     {{ super() }}
 {% endblock %}
 
@@ -36,7 +55,6 @@
 {% elif 'about/' in sourcename  %}
     {% set currently_in = 'about' %}
 {% endif %}
-
 
 {% macro navBar() %}
 {% include "navbar.html" %}
