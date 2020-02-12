@@ -3,9 +3,7 @@
 set -e
 
 apt-get update
-DEBIAN_FRONTEND=noninteractive apt-get install -y python3 python3-pip apache2 build-essential ruby-dev
-
-pip3 install virtualenv
+DEBIAN_FRONTEND=noninteractive apt-get install -y python3 python3-pip python3-venv apache2 build-essential ruby-dev
 
 mkdir -p /out
 chown -R vagrant:users /out

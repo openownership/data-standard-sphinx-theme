@@ -20,7 +20,7 @@ cd /vagrant/data-standard
 
 if [ ! -d "/vagrant/data-standard/.ve" ]
 then
-    virtualenv .ve -p python3
+    python3 -m venv .ve
 fi
 
 source .ve/bin/activate
