@@ -4,11 +4,11 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@font-face { font-family: 'Publico Text Roman'; src: url("../fonts/publico-text-roman.woff2") format("woff2"), url("../fonts/publico-text-roman.woff") format("woff"), url("../fonts/publico-text-roman.ttf") format("ttf"); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'Publico Text Italic'; src: url("../fonts/publico-text-italic.woff2") format("woff2"), url("../fonts/publico-text-italic.woff") format("woff"), url("../fonts/publico-text-italic.ttf") format("ttf"); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'Publico Bold'; src: url("../fonts/publico-bold.woff2") format("woff2"), url("../fonts/publico-bold.woff") format("woff"), url("../fonts/publico-bold.ttf") format("ttf"); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'Atlas Grotesk Regular'; src: url("../fonts/atlas-grotesk-regular.woff2") format("woff2"), url("../fonts/atlas-grotesk-regular.woff") format("woff"), url("../fonts/atlas-grotesk-regular.ttf") format("ttf"); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'Atlas Grotesk Bold'; src: url("../fonts/atlas-grotesk-bold.woff2") format("woff2"), url("../fonts/atlas-grotesk-bold.woff") format("woff"), url("../fonts/atlas-grotesk-bold.ttf") format("ttf"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Publico Text Roman'; src: url("fonts/publico-text-roman.woff2") format("woff2"), url("fonts/publico-text-roman.woff") format("woff"), url("fonts/publico-text-roman.ttf") format("ttf"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Publico Text Italic'; src: url("fonts/publico-text-italic.woff2") format("woff2"), url("fonts/publico-text-italic.woff") format("woff"), url("fonts/publico-text-italic.ttf") format("ttf"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Publico Bold'; src: url("fonts/publico-bold.woff2") format("woff2"), url("fonts/publico-bold.woff") format("woff"), url("fonts/publico-bold.ttf") format("ttf"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Atlas Grotesk Regular'; src: url("fonts/atlas-grotesk-regular.woff2") format("woff2"), url("fonts/atlas-grotesk-regular.woff") format("woff"), url("fonts/atlas-grotesk-regular.ttf") format("ttf"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Atlas Grotesk Bold'; src: url("fonts/atlas-grotesk-bold.woff2") format("woff2"), url("fonts/atlas-grotesk-bold.woff") format("woff"), url("fonts/atlas-grotesk-bold.ttf") format("ttf"); font-weight: normal; font-style: normal; }
 :root { --blue: #007bff; --indigo: #6610f2; --purple: #6f42c1; --pink: #e83e8c; --red: #dc3545; --orange: #fd7e14; --yellow: #ffc107; --green: #00788a; --teal: #20c997; --cyan: #17a2b8; --white: #fff; --gray: #6c757d; --gray-dark: #343a40; --primary: #3c31d5; --secondary: #6c757d; --success: #00788a; --info: #17a2b8; --warning: #ffc107; --danger: #dc3545; --light: #f8f9fa; --dark: #343a40; --oo-dark: #191d23; --oo-light: #e6e6e6; --breakpoint-xs: 0; --breakpoint-sm: 576px; --breakpoint-md: 768px; --breakpoint-lg: 992px; --breakpoint-xl: 1200px; --font-family-sans-serif: "Atlas Grotesk Regular", sans-serif; --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -121,7 +121,7 @@ template { display: none; }
 
 [hidden] { display: none !important; }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { margin-bottom: 0.5rem; font-family: inherit; font-weight: 500; line-height: 1.2; color: inherit; }
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { margin-bottom: 0.5rem; font-family: "Publico Bold", serif; font-weight: 500; line-height: 1.2; color: inherit; }
 
 h1, .h1 { font-size: 2.875rem; }
 
