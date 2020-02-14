@@ -68,6 +68,7 @@ $oo-light: #e6e6e6;
 $oo-lighter: #fefefe;
 $oo-grey: #373a3c;
 $oo-primary: #3c31d5;
+$oo-background: #f4f7f8;
 
 $primary:       $oo-primary !default;
 $secondary:     $gray-600 !default;
@@ -149,7 +150,7 @@ $sizes: map-merge((
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $white !default;
+$body-bg:                   $oo-background !default;
 $body-color:                $oo-grey !default;
 
 // Links

@@ -64,7 +64,7 @@
 }
 
 .beta {
-  background: #191d23;
+  background: #3c31d4;
   color: white;
 }
 
@@ -160,7 +160,6 @@ table.docutils thead tr {
   padding: 0;
   overflow-x: hidden;
   overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-  background: #f7f7f7;
 }
 
 .sidebartoctreewrapper {
