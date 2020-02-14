@@ -5,3 +5,4 @@
 /.idea
 /data-standard
 *.mo
+__pycache__
