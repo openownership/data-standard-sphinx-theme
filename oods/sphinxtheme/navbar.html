@@ -1,9 +1,14 @@
 
 
-<nav class="navbar navbar-expand-lg navbar-{{ theme_navbar_color_class }} bg-{{ theme_navbar_bg_class }} py-0 sticky-top">
-    <a class="navbar-brand" href="{{ pathto(master_doc) }}">
-        {% trans %} Beneficial Ownership Data Standard {% endtrans %}
-    </a>
+<nav class="navbar navbar-expand-md navbar-{{ theme_navbar_color_class }} bg-{{ theme_navbar_bg_class }} py-0 sticky-top">
+
+    <div class="navbar-nav">
+        <a class="py-2" href="{{ pathto(master_doc) }}">
+            <img class="navbar-logo" src="/_static/favicons/mstile-310x310.png" />
+            <div class="navbar-brand" id="abbreviated">{% trans %} BODS {% endtrans %}</div>
+            <div class="navbar-brand" id="full">{% trans %} Beneficial Ownership Data Standard {% endtrans %}</div>
+        </a>
+    </div>
 
     <button class="navbar-toggler mr-4" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -12,26 +17,26 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
             <li class="nav-item{% if currently_in == 'primer' %} active{% endif %} mx-xl-2">
-                <a class="nav-link py-4" href="{{ pathto('primer/index') }}">{% trans %}Primer{% endtrans %}</a>
+                <a class="nav-link py-2" href="{{ pathto('primer/index') }}">{% trans %}Primer{% endtrans %}</a>
             </li>
             <li class="nav-item{% if currently_in == 'schema' %} active{% endif %} mx-xl-2">
-                <a class="nav-link py-4" href="{{ pathto('schema/index') }}">{% trans %}Data Schema{% endtrans %}</a>
+                <a class="nav-link py-2" href="{{ pathto('schema/index') }}">{% trans %}Data Schema{% endtrans %}</a>
             </li>
             {#
             <li class="nav-item{% if currently_in == 'userguides' %} active{% endif %} mx-xl-2">
-                <a class="nav-link py-4" href="{ { pathto('userguides/index') } }">{% trans %}User Guides{% endtrans %}</a>
+                <a class="nav-link py-2" href="{ { pathto('userguides/index') } }">{% trans %}User Guides{% endtrans %}</a>
             </li>
             #}
             <li class="nav-item{% if currently_in == 'examples' %} active{% endif %} mx-xl-2">
-                <a class="nav-link py-4" href="{{ pathto('examples/index') }}">{% trans %}Example Data{% endtrans %}</a>
+                <a class="nav-link py-2" href="{{ pathto('examples/index') }}">{% trans %}Example Data{% endtrans %}</a>
             </li>
             {#
             <li class="nav-item{% if currently_in == 'toolbox' %} active{% endif %} mx-xl-2">
-                <a class="nav-link py-4" href="{ s{ pathto('toolbox/index') } }">{% trans %}Tool Box{% endtrans %}</a>
+                <a class="nav-link py-2" href="{ s{ pathto('toolbox/index') } }">{% trans %}Tool Box{% endtrans %}</a>
             </li>
             #}
             <li class="nav-item{% if currently_in == 'about' %} active{% endif %} mx-xl-2">
-                <a class="nav-link py-4" href="{{ pathto('about/index') }}">{% trans %}About{% endtrans %}</a>
+                <a class="nav-link py-2" href="{{ pathto('about/index') }}">{% trans %}About{% endtrans %}</a>
             </li>
         </ul>
     </div>
