@@ -73,52 +73,19 @@
     width: 40px;
 }
 
-@media screen and (min-width: 0px) and (max-width: 595px) {
-    #full {
-        display: none;
-    }
-
-    #abbreviated {
-        display: inline-block;
-    }
-}
-
-@media screen and (min-width: 560px) and (max-width: 767px) {
-    #full {
-        display: inline-block;
-    }
-
-    #abbreviated {
+@media screen and (max-width: 595px) {
+    .navbar-logo {
         display: none;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 849px) {
-    #full {
-        display: none;
-    }
-
-    #abbreviated {
-        display: inline-block;
-    }
-}
-
-@media screen and (min-width: 850px) {
-    #full {
-        display: inline-block;
-    }
-
-    #abbreviated {
-        display: none;
-    }
-}
-
-.navbar {
-    font-weight: bold;
+.navbar-brand {
+    display: inline-block;
 }
 
 .navbar .navbar-nav a {
     border-bottom: 3px solid #191d23;
+    border-top: 3px solid #191d23;
 }
 
 .navbar .navbar-nav .active a {
@@ -208,6 +175,10 @@ table.docutils thead tr {
     padding: 0;
     overflow-x: hidden;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.oo-logo-sidebar {
+    display: none;
 }
 
 .sidebartoctreewrapper {
