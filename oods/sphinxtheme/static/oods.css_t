@@ -177,10 +177,6 @@ table.docutils thead tr {
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
 }
 
-.oo-logo-sidebar {
-    display: none;
-}
-
 @media screen and (min-width: 992px) {
     .oo-logo-nav {
         display: none;
