@@ -181,6 +181,12 @@ table.docutils thead tr {
     display: none;
 }
 
+@media screen and (min-width: 992px) {
+    .oo-logo-nav {
+        display: none;
+    }
+}
+
 .sidebartoctreewrapper {
     padding-right: 5px;
 }
