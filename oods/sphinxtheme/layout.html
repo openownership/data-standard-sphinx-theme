@@ -7,21 +7,21 @@
 
 
     <!-- Preload -->
-    <link rel="preload" as="font" href="/_static/fonts/atlas-grotesk-bold.woff2" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" as="font" href="/_static/fonts/atlas-grotesk-regular.woff2" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" as="font" href="/_static/fonts/publico-bold.woff2" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" as="font" href="/_static/fonts/publico-text-italic.woff2" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" as="font" href="/_static/fonts/publico-text-roman.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="{{ pathto('_static/fonts/atlas-grotesk-bold.woff2', 1) }}" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="{{ pathto('_static/fonts/atlas-grotesk-regular.woff2', 1) }}" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="{{ pathto('_static/fonts/publico-bold.woff2', 1) }}" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="{{ pathto('_static/fonts/publico-text-italic.woff2', 1) }}" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="{{ pathto('_static/fonts/publico-text-roman.woff2', 1) }}" type="font/woff2" crossorigin="anonymous">
 
     <!-- Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/_static/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/_static/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/_static/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/_static/favicons/site.webmanifest">
-    <link rel="mask-icon" href="/_static/favicons/safari-pinned-tab.svg" color="#3c31d5">
-    <link rel="shortcut icon" href="/_static/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ pathto('_static/favicons/apple-touch-icon.png', 1) }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ pathto('_static/favicons/favicon-32x32.png', 1) }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ pathto('_static/favicons/favicon-16x16.png', 1) }}">
+    <link rel="manifest" href="{{ pathto('_static/favicons/site.webmanifest', 1) }}">
+    <link rel="mask-icon" href="{{ pathto('_static/favicons/safari-pinned-tab.svg', 1) }}" color="#3c31d5">
+    <link rel="shortcut icon" href="{{ pathto('_static/favicons/favicon.ico', 1) }}">
     <meta name="msapplication-TileColor" content="#3c31d5">
-    <meta name="msapplication-config" content="/_static/favicons/browserconfig.xml">
+    <meta name="msapplication-config" content="{{ pathto('_static/favicons/browserconfig.xml', 1) }}">
     <meta name="theme-color" content="#ffffff">
     {{ super() }}
 {% endblock %}
@@ -70,7 +70,7 @@
             v{{ bods_schema_version }}
         </div>
         <div class="oo-logo-sidebar px-3 pt-4">
-            <a href="https://www.openownership.org"><img src="/_static/icons/logo.svg" /></a>
+            <a href="https://www.openownership.org"><img src="{{ pathto('_static/icons/logo.svg', 1) }}" /></a>
         </div>
         <div class="searchboxwrapper mb-3 px-3 py-4">
             {%- block sidebarsearch %}

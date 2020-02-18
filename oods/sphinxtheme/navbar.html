@@ -2,7 +2,7 @@
 
     <div class="navbar-nav">
         <a class="py-2" href="{{ pathto(master_doc) }}">
-            <img class="navbar-logo" src="/_static/favicons/mstile-310x310.png" />
+            <img class="navbar-logo" src="{{ pathto('_static/favicons/mstile-310x310.png', 1) }}" />
             <div class="navbar-brand">{% trans %} Beneficial Ownership Data Standard {% endtrans %}</div>
         </a>
     </div>
@@ -36,7 +36,7 @@
                 <a class="nav-link py-2" href="{{ pathto('about/index') }}">{% trans %}About{% endtrans %}</a>
             </li>
             <li class="nav-item oo-logo-nav mx-xl-2 my-4">
-                <a href="https://www.openownership.org"><img class="w-25" src="/_static/icons/logo-white.svg" /></a>
+                <a href="https://www.openownership.org"><img class="w-25" src="{{ pathto('_static/icons/logo-white.svg', 1) }}" /></a>
             </li>
 
         </ul>
