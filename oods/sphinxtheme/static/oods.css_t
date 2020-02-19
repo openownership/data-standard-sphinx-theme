@@ -185,18 +185,18 @@ table.docutils thead tr {
 }
 
 
-.oo-logo-nav {
+.oo-logo-navbar {
     width: 25%;
 }
 
 @media screen and (max-width: 526px) {
-    .oo-logo-nav {
+    .oo-logo-navbar {
         width: 33%;
     }
 }
 
 @media screen and (min-width: 992px) {
-    .oo-logo-nav {
+    .oo-logo-navbar {
         display: none;
     }
 }
