@@ -35,8 +35,13 @@
             <li class="nav-item{% if currently_in == 'about' %} active{% endif %} mx-xl-2">
                 <a class="nav-link py-2" href="{{ pathto('about/index') }}">{% trans %}About{% endtrans %}</a>
             </li>
-            <li class="nav-item oo-logo-nav mx-xl-2 my-4">
-                <a href="https://www.openownership.org"><img class="w-25" src="{{ pathto('_static/icons/logo-white.svg', 1) }}" /></a>
+            <li class="nav-item mx-xl-2 my-4">
+                <div class="oo-logo-nav">
+                    <a href="https://www.openownership.org">
+                        <img class="w-100" src="{{ pathto('_static/icons/logo-white.svg', 1) }}" />
+                        Back to main site
+                    </a>
+                </div>
             </li>
 
         </ul>

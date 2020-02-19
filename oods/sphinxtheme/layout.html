@@ -70,7 +70,10 @@
             v{{ bods_schema_version }}
             {% if currently_in == None %}
             <div class="oo-logo-sidebar px-3 py-4">
-                <a href="https://www.openownership.org"><img src="{{ pathto('_static/icons/logo-white.svg', 1) }}" /></a>
+                <a href="https://www.openownership.org">
+                    <img src="{{ pathto('_static/icons/logo-white.svg', 1) }}" />
+                    Back to main site
+                </a>
             </div>
             {% endif %}
         </div>

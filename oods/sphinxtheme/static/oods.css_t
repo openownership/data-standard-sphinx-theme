@@ -184,6 +184,17 @@ table.docutils thead tr {
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
 }
 
+
+.oo-logo-nav {
+    width: 25%;
+}
+
+@media screen and (max-width: 526px) {
+    .oo-logo-nav {
+        width: 33%;
+    }
+}
+
 @media screen and (min-width: 992px) {
     .oo-logo-nav {
         display: none;
