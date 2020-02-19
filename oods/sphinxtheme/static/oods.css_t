@@ -64,8 +64,12 @@
 }
 
 .beta {
-    background: #3c31d4;
-    color: white;
+    background: #191d23;
+    color: #e6e6e6;
+}
+
+.navbar {
+    font-size: 0.9rem;
 }
 
 .navbar-logo {
@@ -74,7 +78,7 @@
     padding: 8px;
 }
 
-@media screen and (max-width: 595px) {
+@media screen and (max-width: 438px) {
     .navbar-logo {
         display: none;
     }
@@ -82,11 +86,13 @@
 
 .navbar-brand {
     display: inline-block;
+    font-size: inherit;
 }
 
 .navbar .navbar-nav a {
     border-bottom: 3px solid #191d23;
     border-top: 3px solid #191d23;
+    font-size: inherit;
 }
 
 .navbar .navbar-nav .active a {

@@ -68,12 +68,12 @@
       {%- if render_sidebar %}
         <div class="beta px-3 py-1">
             v{{ bods_schema_version }}
+            {% if currently_in == None %}
+            <div class="oo-logo-sidebar px-3 py-4">
+                <a href="https://www.openownership.org"><img src="{{ pathto('_static/icons/logo-white.svg', 1) }}" /></a>
+            </div>
+            {% endif %}
         </div>
-        {% if currently_in == None %}
-        <div class="oo-logo-sidebar px-3 pt-4">
-            <a href="https://www.openownership.org"><img src="{{ pathto('_static/icons/logo.svg', 1) }}" /></a>
-        </div>
-        {% endif %}
         <div class="searchboxwrapper mb-3 px-3 py-4">
             {%- block sidebarsearch %}
                 {%- include "searchbox.html" %}
