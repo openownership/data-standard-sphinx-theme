@@ -69,12 +69,12 @@
         <div class="beta px-3 py-1">
             v{{ bods_schema_version }}
             {% if currently_in == None %}
-            <div class="oo-logo-sidebar px-3 py-4">
-                <a href="https://www.openownership.org">
-                    <img src="{{ pathto('_static/icons/logo-white.svg', 1) }}" />
-                    Back to main site
-                </a>
-            </div>
+            <a href="https://www.openownership.org">
+                <div class="oo-logo-sidebar px-3 py-4">
+                    <img class="pb-3" src="{{ pathto('_static/icons/logo-white.svg', 1) }}" />
+                    <div class="logo-tagline sans-bold">Back to main site</div>
+                </div>
+            </a>
             {% endif %}
         </div>
         <div class="searchboxwrapper mb-3 px-3 py-4">

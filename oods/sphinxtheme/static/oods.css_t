@@ -201,6 +201,11 @@ table.docutils thead tr {
     }
 }
 
+.logo-tagline {
+    font-size: 0.9rem;
+    color: #e6e6e6;
+}
+
 .sidebartoctreewrapper {
     padding-right: 5px;
 }
