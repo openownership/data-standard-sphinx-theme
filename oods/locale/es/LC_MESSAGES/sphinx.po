@@ -5,7 +5,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
 # 
 # Translators:
-# Amy Guy <amy.guy@opendataservices.coop>, 2019
+# Javier Sarquis <sarquis.translations@gmail.com>, 2020
+# Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2019-07-18 15:56+0000\n"
 "PO-Revision-Date: 2019-02-02 16:10+0000\n"
-"Last-Translator: Amy Guy <amy.guy@opendataservices.coop>, 2019\n"
+"Last-Translator: Emanuel Javier Pérez Acha <ejperezacha@outlook.com.ar>, 2020\n"
 "Language-Team: Spanish (https://www.transifex.com/OpenDataServices/teams/95583/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,44 +26,44 @@ msgstr ""
 
 #: oods/sphinxtheme/breadcrumbsedit.html:6
 msgid "Intro"
-msgstr ""
+msgstr "Introducción"
 
 #: oods/sphinxtheme/globaltoc.html:2 oods/sphinxtheme/navbar.html:15
 msgid "Primer"
-msgstr "Primer but in Spanish"
+msgstr "Guía introductoria"
 
 #: oods/sphinxtheme/globaltoc.html:4 oods/sphinxtheme/navbar.html:18
 msgid "Data Schema"
-msgstr ""
+msgstr "Esquema de datos"
 
 #: oods/sphinxtheme/globaltoc.html:6
 msgid "User Guides"
-msgstr ""
+msgstr "Guías del usuario"
 
 #: oods/sphinxtheme/globaltoc.html:8 oods/sphinxtheme/navbar.html:26
 msgid "Example Data"
-msgstr ""
+msgstr "Ejemplo de datos"
 
 #: oods/sphinxtheme/globaltoc.html:10
 msgid "Tool Box"
-msgstr ""
+msgstr "Herramientas"
 
 #: oods/sphinxtheme/globaltoc.html:12 oods/sphinxtheme/navbar.html:34
 msgid "About"
-msgstr ""
+msgstr "De qué se trata"
 
 #: oods/sphinxtheme/navbar.html:5
 msgid " Beneficial Ownership Data Standard "
-msgstr ""
+msgstr "Estándar de Datos sobre Beneficiarios Finales"
 
 #: oods/sphinxtheme/prevnext.html:6
 msgid "Previous"
-msgstr ""
+msgstr "Anterior"
 
 #: oods/sphinxtheme/prevnext.html:14
 msgid "Next"
-msgstr ""
+msgstr "Siguiente"
 
 #: oods/sphinxtheme/searchbox.html:4
 msgid "Search..."
-msgstr ""
+msgstr "Buscar..."
