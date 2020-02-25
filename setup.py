@@ -15,4 +15,5 @@ setup(
         'sphinxtheme/static/bootstrap-4.0.0/js/*.js.map'
     ]},
     include_package_data=True,
+    install_requires=['Sphinx', 'sphinx-intl', 'Pygments']
 )
