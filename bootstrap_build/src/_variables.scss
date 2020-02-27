@@ -236,26 +236,6 @@ $transition-collapse:         height .35s ease !default;
 // Font, line-height, and color for body text, headings, and more.
 
 @font-face {
-  font-family: 'Publico Text Roman';
-  src: 
-  url('fonts/publico-text-roman.woff2') format('woff2'), 
-  url('fonts/publico-text-roman.woff') format('woff'),
-  url('fonts/publico-text-roman.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Publico Text Italic';
-  src: 
-  url('fonts/publico-text-italic.woff2') format('woff2'), 
-  url('fonts/publico-text-italic.woff') format('woff'),
-  url('fonts/publico-text-italic.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'Publico Bold';
   src: 
   url('fonts/publico-bold.woff2') format('woff2'), 

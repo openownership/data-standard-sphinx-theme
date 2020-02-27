@@ -1,22 +1,4 @@
 @font-face {
-    font-family: "Publico Text Roman";
-    src: url("fonts/publico-text-roman.woff2") format("woff2"),
-        url("fonts/publico-text-roman.woff") format("woff"),
-        url("fonts/publico-text-roman.ttf") format("ttf");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Publico Text Italic";
-    src: url("fonts/publico-text-italic.woff2") format("woff2"),
-        url("fonts/publico-text-italic.woff") format("woff"),
-        url("fonts/publico-text-italic.ttf") format("ttf");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: "Publico Bold";
     src: url("fonts/publico-bold.woff2") format("woff2"),
         url("fonts/publico-bold.woff") format("woff"),
@@ -43,24 +25,8 @@
     font-style: normal;
 }
 
-.sans-regular {
-    font-family: "Atlas Grotesk Regular", sans-serif;
-}
-
 .sans-bold {
     font-family: "Atlas Grotesk Bold", sans-serif;
-}
-
-.serif-regular {
-    font-family: "Publico Text Roman", serif;
-}
-
-.serif-italic {
-    font-family: "Publico Text Italic", serif;
-}
-
-.serif-headline {
-    font-family: "Publico Bold", serif;
 }
 
 .beta {
