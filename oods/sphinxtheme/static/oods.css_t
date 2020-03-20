@@ -1,25 +1,74 @@
+@font-face {
+    font-family: "Publico Bold";
+    src: url("fonts/publico-bold.woff2") format("woff2"),
+        url("fonts/publico-bold.woff") format("woff"),
+        url("fonts/publico-bold.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Atlas Grotesk Regular";
+    src: url("fonts/atlas-grotesk-regular.woff2") format("woff2"),
+        url("fonts/atlas-grotesk-regular.woff") format("woff"),
+        url("fonts/atlas-grotesk-regular.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Atlas Grotesk Bold";
+    src: url("fonts/atlas-grotesk-bold.woff2") format("woff2"),
+        url("fonts/atlas-grotesk-bold.woff") format("woff"),
+        url("fonts/atlas-grotesk-bold.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.sans-bold {
+    font-family: "Atlas Grotesk Bold", sans-serif;
+}
+
 .beta {
-    background: black;
-    color: white;
+    background: #191d23;
+    color: #e6e6e6;
 }
 
 .navbar {
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    font-size: 0.9rem;
 }
 
-.navbar .navbar-nav .active a {
-    border-bottom: 4px solid #fdd106;
+.navbar-logo {
+    height: 40px;
+    width: 40px;
+    padding: 8px;
+}
+
+@media screen and (max-width: 438px) {
+    .navbar-logo {
+        display: none;
+    }
 }
 
 .navbar-brand {
-    font-weight: bold;
+    display: inline-block;
+    font-size: inherit;
+}
+
+.navbar .navbar-nav a {
+    border-bottom: 3px solid #191d23;
+    border-top: 3px solid #191d23;
+    font-size: inherit;
+}
+
+.navbar .navbar-nav .active a {
+    border-bottom: 3px solid #3c31d4;
 }
 
 .oods-main {
     max-width: 62rem;
     margin: 0 auto;
 }
-
 
 .oods-main .figure {
     display: block;
@@ -54,8 +103,9 @@ https://github.com/openownership/data-standard-sphinx-theme/issues/22 **/
     padding: 10px;
 }
 
-
-.admonition.attention, .admonition.warning, .highlights {
+.admonition.attention,
+.admonition.warning,
+.highlights {
     border-left: 5px solid #f0ad4e;
     background: #fcf7e4;
     padding: 10px;
@@ -67,11 +117,12 @@ https://github.com/openownership/data-standard-sphinx-theme/issues/22 **/
 }
 
 h1 {
-    color: #00788a;
+    color: #373a3c;
     font-weight: bold;
 }
 
-h2, h3 {
+h2,
+h3 {
     margin: 2.5rem 0 1rem;
 }
 
@@ -89,19 +140,40 @@ table.docutils thead tr {
 }
 
 .oods-sidebar {
-  position: fixed;
-  bottom: 0;
-  top: 74px;
-  left: 0;
-  z-index: 100; /* Behind the navbar */
-  padding: 0;
-  overflow-x: hidden;
-  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
-  background: #f7f7f7;
+    position: fixed;
+    bottom: 0;
+    top: 74px;
+    left: 0;
+    z-index: 100; /* Behind the navbar */
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+
+.oo-logo-navbar {
+    width: 25%;
+}
+
+@media screen and (max-width: 526px) {
+    .oo-logo-navbar {
+        width: 33%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .oo-logo-navbar {
+        display: none;
+    }
+}
+
+.logo-tagline {
+    font-size: 0.9rem;
+    color: #e6e6e6;
 }
 
 .sidebartoctreewrapper {
-  padding-right: 5px;
+    padding-right: 5px;
 }
 
 .sidebartoctree-title {
@@ -109,6 +181,10 @@ table.docutils thead tr {
     padding: 5px 5px 5px 20px;
     font-weight: bold;
     font-size: 1.25rem;
+}
+
+.sidebartoctree-title a {
+    color: #373a3c;
 }
 
 .sidebartoctree ul {
@@ -134,7 +210,6 @@ table.docutils thead tr {
     display: none;
 }
 
-
 .sidebartoctree li.toctree-l2 {
     margin: 5px 0;
     padding: 10px 10px 10px 20px;
@@ -146,7 +221,7 @@ table.docutils thead tr {
 }
 
 .sidebartoctree li.toctree-l2.current > a {
-    color: #00788a;
+    color: #3c31d5;
     font-weight: bold;
 }
 
@@ -154,7 +229,6 @@ table.docutils thead tr {
     margin: 0;
     padding: 10px 10px 10px 30px;
 }
-
 
 .sidebartoctree li.toctree-l3 > a {
     color: #777777;
@@ -165,51 +239,29 @@ table.docutils thead tr {
     font-weight: bold;
 }
 
-
 #searchbox input[type="text"] {
-  background-color: #ffffff;
-  border: solid 1px #e4e4e4;
-  width: 100%;
-  padding: 4px;
+    background-color: #ffffff;
+    border: solid 1px #e4e4e4;
+    width: 100%;
+    padding: 4px;
 }
 
-.oods-breadcrumbs-parent a, .oods-main-document a {
-  display: inline-block;
-  position: relative;
-  color: #00788A;
-  text-decoration: none;
-  padding: 0 0.05em;
-  border-bottom: 3px solid #D0EFEF;
-  font-weight: 500;
+.oods-breadcrumbs-parent a,
+.oods-main-document a {
+    display: inline-block;
+    position: relative;
+    color: #3c31d5;
+    text-decoration: underline;
+    padding: 0 0.05em;
+    font-weight: 500;
 }
 
-.oods-breadcrumbs-parent a:hover, .oods-breadcrumbs-parent a:focus, .oods-main-document a:hover, .oods-main-document a:focus {
-  color: #00788A;
-}
-
-.oods-breadcrumbs-parent a:after, .oods-main-document a:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 100%;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: #D0EFEF;
-  z-index: -1;
-  transition: all 0.1s cubic-bezier(0.000, 0.590, 1.000, 0.260);
-}
-
-.oods-breadcrumbs-parent a:hover:after, .oods-breadcrumbs-parent a:focus:after, .oods-main-document a:hover:after, .oods-main-document a:focus:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: #D0EFEF;
-  z-index: -1;
+.oods-breadcrumbs-parent a:hover,
+.oods-breadcrumbs-parent a:focus,
+.oods-main-document a:hover,
+.oods-main-document a:focus {
+    color: #3026bb;
+    text-decoration: none;
 }
 
 .oods-main span.pre {
@@ -217,56 +269,85 @@ table.docutils thead tr {
     border-radius: 2px;
 }
 
-.frontpageboxleft, .frontpageboxright {
-    border: 1px solid #ddd;
+.frontpageboxleft,
+.frontpageboxright {
+    background-color: #fefefe;
     margin: 20px 0;
-    padding: 0px;
-    border-radius: 5px;
+    padding: 10px;
+    transition: box-shadow .25s;
+    box-shadow: 5px 5px 0 #7e8da3;;
 }
 
-.frontpageboxleft h2, .frontpageboxright h2 {
+.frontpageboxleft:hover,
+.frontpageboxright:hover {
+    box-shadow: 5px 5px 0 #3c31d5;
+}
+
+
+.frontpageboxleft h2,
+.frontpageboxright h2 {
     padding: 5px 10px;
     margin: 10px 0 0 0;
 }
 
-.frontpageboxleft p, .frontpageboxright p {
+.frontpageboxleft p,
+.frontpageboxright p {
     padding: 5px 10px;
 }
 
-.frontpageboxleft  .primaryfrontpageboxlink , .frontpageboxright .primaryfrontpageboxlink {
+.frontpageboxleft .primaryfrontpageboxlink,
+.frontpageboxright .primaryfrontpageboxlink {
     padding: 5px 10px;
-    text-align: right;
 }
 
-.frontpageboxleft  .primaryfrontpageboxlink a , .frontpageboxright .primaryfrontpageboxlink a {
+.frontpageboxleft .primaryfrontpageboxlink a,
+.frontpageboxright .primaryfrontpageboxlink a {
     color: #fff;
     border-radius: 0.25rem;
     line-height: 1.7;
     padding: 0.375rem 0.75rem;
-    background-color: #00788a;
-    border-color: #00788a;
+    background-color: #3c31d5;
+    border-color: #3c31d5;
+    text-decoration: none;
 }
 
-.frontpageboxleft  .primaryfrontpageboxlink a:hover , .frontpageboxright .primaryfrontpageboxlink a:focus,
-.frontpageboxleft  .primaryfrontpageboxlink a:hover , .frontpageboxright .primaryfrontpageboxlink a:focus {
-    background-color: #005764;
-    border-color: #004c57;
+.frontpageboxleft .primaryfrontpageboxlink a:hover,
+.frontpageboxleft .primaryfrontpageboxlink a:focus,
+.frontpageboxright .primaryfrontpageboxlink a:hover,
+.frontpageboxright .primaryfrontpageboxlink a:focus {
+    background-color: #3026bb;
+    border-color: #3026bb;
 }
 
-.frontpageboxleft  .secondaryfrontpageboxlink , .frontpageboxright .secondaryfrontpageboxlink {
+.frontpageboxleft .secondaryfrontpageboxlink,
+.frontpageboxright .secondaryfrontpageboxlink {
     border-top: 1px solid #ddd;
     padding: 5px 10px;
-
 }
 
-.frontpageboxleft  .secondaryfrontpageboxlink a , .frontpageboxright .secondaryfrontpageboxlink a {
+.frontpageboxleft .secondaryfrontpageboxlink a,
+.frontpageboxright .secondaryfrontpageboxlink a {
+    text-decoration: underline;
+}
+
+/* This deviates from the border-bottom approach as these are multiline strings (no transition possible) */
+.frontpageboxleft .secondaryfrontpageboxlink a:hover,
+.frontpageboxright .secondaryfrontpageboxlink a:hover {
     text-decoration: none;
-    border-bottom: 0px;
 }
 
-@media only screen and (min-width: 992px) {
-    .frontpageboxleft, .frontpageboxright {
-        width: 45%;
+@media only screen and (max-width: 767px) {
+    .frontpageboxleft,
+    .frontpageboxright {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .frontpageboxleft,
+    .frontpageboxright {
+        width: 47%;
     }
 
     .frontpageboxleft {
@@ -280,12 +361,11 @@ table.docutils thead tr {
     .frontpageboxclear {
         clear: both;
     }
-
 }
 
 /** https://github.com/openownership/data-standard-sphinx-theme/issues/41 **/
 table.docutils thead tr {
-    background: #00788a;
+    background: #3c31d5;
 }
 
 table.docutils thead tr th {

@@ -5,6 +5,9 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+@font-face { font-family: 'Publico Bold'; src: url("fonts/publico-bold.woff2") format("woff2"), url("fonts/publico-bold.woff") format("woff"), url("fonts/publico-bold.ttf") format("ttf"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Atlas Grotesk Regular'; src: url("fonts/atlas-grotesk-regular.woff2") format("woff2"), url("fonts/atlas-grotesk-regular.woff") format("woff"), url("fonts/atlas-grotesk-regular.ttf") format("ttf"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Atlas Grotesk Bold'; src: url("fonts/atlas-grotesk-bold.woff2") format("woff2"), url("fonts/atlas-grotesk-bold.woff") format("woff"), url("fonts/atlas-grotesk-bold.ttf") format("ttf"); font-weight: normal; font-style: normal; }
 *, *::before, *::after { box-sizing: border-box; }
 
 html { font-family: sans-serif; line-height: 1.15; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -ms-overflow-style: scrollbar; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
@@ -12,7 +15,7 @@ html { font-family: sans-serif; line-height: 1.15; -webkit-text-size-adjust: 100
 @-ms-viewport { width: device-width; }
 article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section { display: block; }
 
-body { margin: 0; font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; font-size: 1.15rem; font-weight: 400; line-height: 1.7; color: #212529; text-align: left; background-color: #fff; }
+body { margin: 0; font-family: "Atlas Grotesk Regular", sans-serif; font-size: 1rem; font-weight: 400; line-height: 1.6; color: #373a3c; text-align: left; background-color: #f4f7f8; }
 
 [tabindex="-1"]:focus { outline: 0 !important; }
 
@@ -48,8 +51,8 @@ sub { bottom: -.25em; }
 
 sup { top: -.5em; }
 
-a { color: #00788a; text-decoration: none; background-color: transparent; -webkit-text-decoration-skip: objects; }
-a:hover { color: #00353e; text-decoration: underline; }
+a { color: #3c31d5; text-decoration: none; background-color: transparent; -webkit-text-decoration-skip: objects; }
+a:hover { color: #281f9a; text-decoration: underline; }
 
 a:not([href]):not([tabindex]) { color: inherit; text-decoration: none; }
 a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus { color: inherit; text-decoration: none; }

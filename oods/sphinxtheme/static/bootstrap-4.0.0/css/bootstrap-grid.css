@@ -9,6 +9,9 @@ html { box-sizing: border-box; -ms-overflow-style: scrollbar; }
 
 *, *::before, *::after { box-sizing: inherit; }
 
+@font-face { font-family: 'Publico Bold'; src: url("fonts/publico-bold.woff2") format("woff2"), url("fonts/publico-bold.woff") format("woff"), url("fonts/publico-bold.ttf") format("ttf"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Atlas Grotesk Regular'; src: url("fonts/atlas-grotesk-regular.woff2") format("woff2"), url("fonts/atlas-grotesk-regular.woff") format("woff"), url("fonts/atlas-grotesk-regular.ttf") format("ttf"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Atlas Grotesk Bold'; src: url("fonts/atlas-grotesk-bold.woff2") format("woff2"), url("fonts/atlas-grotesk-bold.woff") format("woff"), url("fonts/atlas-grotesk-bold.ttf") format("ttf"); font-weight: normal; font-style: normal; }
 .container { width: 100%; padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; }
 @media (min-width: 576px) { .container { max-width: 540px; } }
 @media (min-width: 768px) { .container { max-width: 720px; } }

@@ -62,7 +62,15 @@ $colors: map-merge((
   "gray-dark":  $gray-800
 ), $colors);
 
-$primary:       $green !default;
+// OpenOwnership theme overrides 
+$oo-dark: #191d23;
+$oo-light: #e6e6e6;
+$oo-lighter: #fefefe;
+$oo-grey: #373a3c;
+$oo-primary: #3c31d5;
+$oo-background: #f4f7f8;
+
+$primary:       $oo-primary !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -80,7 +88,9 @@ $theme-colors: map-merge((
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "oo-dark":    $oo-dark,
+  "oo-light":   $oo-light,
 ), $theme-colors);
 // stylelint-enable
 
@@ -140,8 +150,8 @@ $sizes: map-merge((
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $white !default;
-$body-color:                $gray-900 !default;
+$body-bg:                   $oo-background !default;
+$body-color:                $oo-grey !default;
 
 // Links
 //
@@ -225,13 +235,43 @@ $transition-collapse:         height .35s ease !default;
 //
 // Font, line-height, and color for body text, headings, and more.
 
+@font-face {
+  font-family: 'Publico Bold';
+  src: 
+  url('fonts/publico-bold.woff2') format('woff2'), 
+  url('fonts/publico-bold.woff') format('woff'),
+  url('fonts/publico-bold.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Atlas Grotesk Regular';
+  src: 
+  url('fonts/atlas-grotesk-regular.woff2') format('woff2'), 
+  url('fonts/atlas-grotesk-regular.woff') format('woff'),
+  url('fonts/atlas-grotesk-regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Atlas Grotesk Bold';
+  src: 
+  url('fonts/atlas-grotesk-bold.woff2') format('woff2'), 
+  url('fonts/atlas-grotesk-bold.woff') format('woff'),
+  url('fonts/atlas-grotesk-bold.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-sans-serif:      'Atlas Grotesk Regular', sans-serif !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 
-$font-size-base:              1.15rem !default; // Assumes the browser default, typically `16px`
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg:                ($font-size-base * 1.25) !default;
 $font-size-sm:                ($font-size-base * .875) !default;
 
@@ -240,18 +280,18 @@ $font-weight-normal:          400 !default;
 $font-weight-bold:            700 !default;
 
 $font-weight-base:            $font-weight-normal !default;
-$line-height-base:            1.7 !default;
+$line-height-base:            1.6 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                1.8rem !default;
-$h3-font-size:                1.6rem !default;
+$h1-font-size:                $font-size-base * 2.25 !default;
+$h2-font-size:                2rem !default;
+$h3-font-size:                1.5rem !default;
 $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
 
 $headings-margin-bottom:      ($spacer / 2) !default;
-$headings-font-family:        inherit !default;
-$headings-font-weight:        500 !default;
+$headings-font-family:        'Publico Bold', serif !default;
+$headings-font-weight:        400 !default;
 $headings-line-height:        1.2 !default;
 $headings-color:              inherit !default;
 
@@ -610,10 +650,10 @@ $navbar-dark-disabled-color:        rgba($white, .25) !default;
 $navbar-dark-toggler-icon-bg:       str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-dark-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
 $navbar-dark-toggler-border-color:  rgba($white, .1) !default;
 
-$navbar-light-color:                white !default;
-$navbar-light-hover-color:          #fdd106 !default;
-$navbar-light-active-color:         white !default;
-$navbar-light-disabled-color:       white !default;
+$navbar-light-color:                $oo-light !default;
+$navbar-light-hover-color:          $oo-lighter !default;
+$navbar-light-active-color:         $oo-light !default;
+$navbar-light-disabled-color:       $oo-light !default;
 $navbar-light-toggler-icon-bg:      str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
 $navbar-light-toggler-border-color: rgba($black, .1) !default;
 

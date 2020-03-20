@@ -19,14 +19,13 @@ module.exports = function(grunt) {
                 },
                 files: [{
                     expand: true, // Recursive Output style.
-                    cwd: "bootstrap/scss/", // The startup directory
+                    cwd: "node_modules/bootstrap/scss/", // The startup directory
                     src: ["**/*.scss"], // Source files
                     dest: "../oods/sphinxtheme/static/bootstrap-4.0.0/css/", // Destination
                     ext: ".css" // File extension
                 }]
             }
-        }
-
+        },
     });
     grunt.registerTask('default', ['sass']);
 }
