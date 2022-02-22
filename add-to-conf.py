@@ -1,8 +1,3 @@
-###################################################### General Config
-
-html_context = {'bods_schema_version': '0.2'}
-
-
 ###################################################### Use Custom Theme
 #
 #  There is an existing html_theme bit - search for it and replace it with this.
