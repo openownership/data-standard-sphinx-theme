@@ -1,16 +1,19 @@
 Vagrant.configure(2) do |config|
 
-  config.vm.box = "ubuntu/bionic64"
+  config.vm.box = "ubuntu/focal64"
 
   config.vm.define "worker" do |normal|
 
-      config.vm.box = "ubuntu/bionic64"
+      config.vm.box = "ubuntu/focal64"
 
       config.vm.network "forwarded_port", guest: 80, host: 8080
 
       config.vm.synced_folder ".", "/vagrant",  :owner=> 'vagrant', :group=>'users', :mount_options => ['dmode=777', 'fmode=777']
 
       config.vm.provider "virtualbox" do |vb|
+
+        vb.name = "openownership-data-standard-sphinx-theme"
+
          # Display the VirtualBox GUI when booting the machine
          vb.gui = false
 

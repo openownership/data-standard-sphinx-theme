@@ -14,15 +14,14 @@ pip3 install pylinkvalidator
 cp /vagrant/vagrant/apache.conf /etc/apache2/sites-enabled/000-default.conf
 /etc/init.d/apache2 restart
 
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
 apt-get install -y nodejs
 npm install -g grunt-cli
 
 gem install sass
 
-echo "alias build-all='/vagrant/vagrant/build-all.sh'" >> /home/vagrant/.bashrc
-echo "alias build-sphinx='/vagrant/vagrant/build-sphinx.sh'" >> /home/vagrant/.bashrc
+echo "alias build='/vagrant/vagrant/build.sh'" >> /home/vagrant/.bashrc
 
-cd /vagrant/bootstrap_build && npm install
+cd /vagrant/bootstrap_build && su vagrant -c "npm install"
 
 cd /vagrant/data-standard && git submodule update --init

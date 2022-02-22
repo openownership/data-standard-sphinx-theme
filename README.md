@@ -4,7 +4,11 @@ This repository holds the custom theme for https://github.com/openownership/data
 
 It also holds various files and tools to build this theme.
 
-## To use as a developer / writer
+## To use to write docs
+
+If you are writing docs only and **don't** need to change the theme then please follow the instructions at https://github.com/openownership/data-standard/blob/master/README.md
+
+## To use as a theme developer
 
 You will need Vagrant and VirtualBox (or equivalent).
 
@@ -15,23 +19,16 @@ You will need Vagrant and VirtualBox (or equivalent).
 5. Follow the instructons in add-to-conf.py in the root directory to edit conf.py in data-standard/docs/conf.py .
 6. In the folder for this repository (eg data-standard-sphinx-theme) run "vagrant up"
 7. Run "vagrant ssh" to connect to this box (Windows user may want to install the putty plugin and run "vagrant putty" instead). 
-8. Inside the box, run "build-all"
+8. Inside the box, run "build"
 9. Browse "http://localhost:8080"
 
 Edit any files you want, then repeat the last 2 steps!
-
-Once you have run "build-all" once, you can switch to the faster "build-sphinx" command. 
-This only runs the sphinx stage, and does not build the theme files or install the latest Python libraries. 
-If you have only changed content, use "build-sphinx". 
-If you or someone else has changed the theme, or you are unsure about which to use, use "build-all". 
-
 
 ## To build different languages
 
 Simply pass a variable:
 
-    BODSLANG=ru build-all
-    BODSLANG=ru build-sphinx
+    BODSLANG=ru build
 
 ### Problems
 
@@ -46,13 +43,19 @@ and try again.
 
 When you are connected to the vagrant box (after running "vagrant ssh"), run:
 
-    build-all
-    pylinkvalidate.py --output=/tmp/report.txt  http://localhost/
-    less /tmp/report.txt
+    build
 
-This will only check internal links. If you want to check external links to, add " --test-outside"
+At the end this will check all internal links and echo a report. Hopefully you will see:
 
+    SUCCESS Crawled 91 urls in 2.53 seconds
+
+This will only check internal links. If you want to check external links to, run:
+
+    build
     pylinkvalidate.py --test-outside --output=/tmp/report.txt  http://localhost/
+    cat /tmp/report.txt
+
+Any errors reported in external links must be checked by hand - sometimes a website will block our automatic checker but let a human through. 
 
 ## Translations
 
