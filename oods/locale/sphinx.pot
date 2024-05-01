@@ -27,19 +27,11 @@ msgid "Primer"
 msgstr ""
 
 #: oods/sphinxtheme/globaltoc.html:4 oods/sphinxtheme/navbar.html:18
-msgid "Data Schema"
-msgstr ""
-
-#: oods/sphinxtheme/globaltoc.html:6
-msgid "User Guides"
+msgid "Data Standard"
 msgstr ""
 
 #: oods/sphinxtheme/globaltoc.html:8 oods/sphinxtheme/navbar.html:26
 msgid "Example Data"
-msgstr ""
-
-#: oods/sphinxtheme/globaltoc.html:10
-msgid "Tool Box"
 msgstr ""
 
 #: oods/sphinxtheme/globaltoc.html:12 oods/sphinxtheme/navbar.html:34
