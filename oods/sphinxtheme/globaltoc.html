@@ -1,13 +1,9 @@
 {% if currently_in == 'primer' %}
     <div class="sidebartoctree-title"><a href="{{ pathto('primer/index') }}">{% trans %}Primer{% endtrans %}</a></div>
-{% elif currently_in == 'schema' %}
-    <div class="sidebartoctree-title"><a href="{{ pathto('schema/index') }}">{% trans %}Data Schema{% endtrans %}</a></div>
-{% elif currently_in == 'userguides' %}
-    <div class="sidebartoctree-title"><a href="{{ pathto('userguides/index') }}">{% trans %}User Guides{% endtrans %}</a></div>
+{% elif currently_in == 'standard' %}
+    <div class="sidebartoctree-title"><a href="{{ pathto('schema/index') }}">{% trans %}Data Standard{% endtrans %}</a></div>
 {% elif currently_in == 'examples' %}
     <div class="sidebartoctree-title"><a href="{{ pathto('examples/index') }}l">{% trans %}Example Data{% endtrans %}</a></div>
-{% elif currently_in == 'toolbox' %}
-    <div class="sidebartoctree-title"><a href="{{ pathto('toolbox/index') }}">{% trans %}Tool Box{% endtrans %}</a></div>
 {% elif currently_in == 'about' %}
     <div class="sidebartoctree-title"><a href="{{ pathto('about/index') }}">{% trans %}About{% endtrans %}</a></div>
 {% endif %}
