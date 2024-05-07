@@ -41,8 +41,8 @@
 
 
 {% set currently_in = None %}
-{% if 'schema/' in sourcename  %}
-    {% set currently_in = 'schema' %}
+{% if 'standard/' in sourcename  %}
+    {% set currently_in = 'standard' %}
 {% elif 'primer/' in sourcename  %}
     {% set currently_in = 'primer' %}
 {% elif 'userguides/' in sourcename  %}
