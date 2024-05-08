@@ -383,3 +383,8 @@ table.docutils tbody tr.row-even {
 table.docutils tbody tr.row-odd td {
     padding-bottom: 20px;
 }
+
+.btn.btn-primary:visited {
+  color: #fff;
+
+}
