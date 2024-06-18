@@ -1,10 +1,12 @@
 [main]
 host = https://www.transifex.com
 
-[bods-theme.sphinx-pot]
-file_filter = oods/locale/<lang>/LC_MESSAGES/sphinx.po
-minimum_perc = 0
-source_file = oods/locale/sphinx.pot
-source_lang = en
-type = PO
+[o:OpenDataServices:p:bods-theme:r:sphinx]
+file_filter            = oods/locale/<lang>/LC_MESSAGES/sphinx.po
+source_file            = oods/locale/sphinx.pot
+type                   = PO
+minimum_perc           = 0
+resource_name          = sphinx
+replace_edited_strings = false
+keep_translations      = false
 
