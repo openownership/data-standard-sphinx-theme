@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: standard_theme 0.0.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-04 11:15+0000\n"
+"POT-Creation-Date: 2024-06-18 14:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,8 +26,8 @@ msgstr ""
 msgid "Primer"
 msgstr ""
 
-#: oods/sphinxtheme/globaltoc.html:4
-msgid "Data Schema"
+#: oods/sphinxtheme/globaltoc.html:4 oods/sphinxtheme/navbar.html:20
+msgid "Data Standard"
 msgstr ""
 
 #: oods/sphinxtheme/globaltoc.html:6
@@ -46,16 +46,12 @@ msgstr ""
 msgid "About"
 msgstr ""
 
-#: oods/sphinxtheme/layout.html:73 oods/sphinxtheme/navbar.html:42
+#: oods/sphinxtheme/layout.html:74 oods/sphinxtheme/navbar.html:42
 msgid "Back to main site"
 msgstr ""
 
 #: oods/sphinxtheme/navbar.html:6
 msgid " Beneficial Ownership Data Standard "
-msgstr ""
-
-#: oods/sphinxtheme/navbar.html:20
-msgid "Data Standard"
 msgstr ""
 
 #: oods/sphinxtheme/prevnext.html:6
